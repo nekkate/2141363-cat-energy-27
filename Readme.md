@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Ekaterina Nekrylova](https://up.htmlacademy.ru/adaptive/27/user/2141363).
-* Наставник: [Павел Позняк](https://htmlacademy.ru/profile/id907403).
+* Наставник: [Павел Позняк](https://htmlacademy.ru/profile/id907403)..
 
 ---
 
