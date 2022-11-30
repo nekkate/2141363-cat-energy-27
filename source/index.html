@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Интернет-магазин функционального питания для котиков.</title>
   </head>
-  <body class="page__body">
+  <body class="page">
     <div class="page__intro">
       <header class="main-header">
         <a class="main-header__logo">
-          <img src="#" width="33" height="33" alt="Логотип Кэт Энерджи.">
+          <img src="#" width="33" height="33" alt="Логотип Кэт Энерджи." />
         </a>
         <nav class="main-header__nav">
           <button class="main-header__nav-toggle" type="button">
@@ -18,7 +19,9 @@
           </button>
           <ul class="main-header__nav-list">
             <li class="main-header__nav-item">
-              <span class="main-header__nav-link main-header__nav-link--current">Главная</span>
+              <span class="main-header__nav-link main-header__nav-link--current"
+                >Главная</span
+              >
             </li>
             <li class="main-header__nav-item">
               <a class="main-header__nav-link" href="catalog.html"
@@ -26,7 +29,7 @@
               >
             </li>
             <li class="main-header__nav-item">
-              <a  class="main-header__nav-link" href="form.html"
+              <a class="main-header__nav-link" href="form.html"
                 >Подбор программы</a
               >
             </li>
@@ -34,11 +37,16 @@
         </nav>
       </header>
       <section class="intro">
-        <h1 class="intro__title">Функциональное питание для котов</h1>
-    <p class="intro__text">Занялся собой? Займись котом!</p>
-    <button class="intro__button button button--green ">
-      Подобрать программу
-    </button>
+        <div class="intro__container">
+          <h1 class="intro__title">Функциональное питание для котов</h1>
+          <p class="intro__text">Занялся собой? Займись котом!</p>
+        </div>
+        <div class="intro__container-img">
+          <img class="intro__img" src="./img/index/intro-bank.png" alt="Банка корма в приветственном блоке." width="280" height="270">
+          <button class="intro__button button button--green" type="button">
+            Подобрать программу
+          </button>
+        </div>
       </section>
     </div>
     <main class="main-container">
@@ -121,7 +129,7 @@
               width="280"
               height="256"
               alt="Лысый котик сфинкс как до."
-            >
+            />
           </li>
           <li class="cat-slider__item cat-slider__item--after">
             <img
@@ -129,7 +137,7 @@
               width="280"
               height="256"
               alt="Пушистый котик как после."
-            >
+            />
           </li>
         </ul>
         <button class="cat-slider-toggle" type="button">
@@ -145,7 +153,7 @@
       </section>
       <section class="contacts">
         <h2 class="contacts__title">
-          приглашаем<br >к сотрудничеству дилеров!
+          приглашаем<br />к сотрудничеству дилеров!
         </h2>
         <p class="contacts__description">
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
@@ -154,7 +162,7 @@
     </main>
     <footer class="main-footer">
       <a class="main-footer__logo">
-        <img  src="#" width="128" height="24" alt="Логотип Cat Energy.">
+        <img src="#" width="128" height="24" alt="Логотип Cat Energy." />
       </a>
       <ul class="main-footer__list">
         <li class="main-footer__item main-footer__item--vk">
@@ -173,7 +181,12 @@
       </ul>
       <a class="main-footer__logo-html">
         HTML Academy
-        <img src="https://htmlacademy.ru/" width="33" height="33" alt="Логотип HTML Академии." >
+        <img
+          src="https://htmlacademy.ru/"
+          width="33"
+          height="33"
+          alt="Логотип HTML Академии."
+        />
       </a>
     </footer>
   </body>

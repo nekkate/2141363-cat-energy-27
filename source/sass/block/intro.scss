@@ -1,0 +1,51 @@
+.intro {
+  color: white;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.intro__container {
+  height: 305px;
+  background-image:
+  linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+  url("../img/index/background-intro.jpg");
+  background-repeat: no-repeat;
+}
+
+.intro__container-img {
+  margin-top: -135px;
+}
+
+
+.intro__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+.intro__text {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 400;
+}
+
+.intro__img {
+  margin: 0 0 29px 0;
+}
+
+.intro__button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-white;
+  background-color: $color-apple;
+  border: none;
+  font-family: inherit;
+
+  display: block;
+}
