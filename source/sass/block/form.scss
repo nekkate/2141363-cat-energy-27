@@ -4,13 +4,14 @@
 
 .form__title {
   font-size: 36px;
+  font-weight: 400;
   line-height: 36px;
 }
 
 .form__subtitle {
   font-size: 14px;
   line-height: 18px;
-
+  font-weight: 400;
 }
 
 .form__info {
@@ -29,12 +30,9 @@
   line-height: 18px;
 }
 
-
-
 .form__purpose {
   border: none;
 }
-
 
 
 .form__contacts {
@@ -66,5 +64,5 @@
   text-transform: none;
   font-size: 14px;
   line-height: 16px;
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: $ff-lato;
 }
