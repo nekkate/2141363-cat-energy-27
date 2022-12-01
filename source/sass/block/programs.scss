@@ -1,20 +1,19 @@
 .programs {
-  padding: 0;
   margin: 0 0 20px 0;
-
+  padding: 0;
 }
 
 .programs__list {
-  list-style-type: none;
   margin: 0;
   padding: 0;
 
+  list-style-type: none;
 }
 
 .programs__title {
+  font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -23,15 +22,14 @@
 }
 
 .programs__text {
-  font-family: $ff-lato;
   font-size: 14px;
   line-height: 18px;
+  font-family: $ff-lato;
 }
 
 .programs__button {
-  font-family: inherit;
-
   line-height: 16px;
+  font-family: inherit;
   text-transform: uppercase;
 
   border: none;

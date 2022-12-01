@@ -3,15 +3,15 @@
 }
 
 .form__title {
-  font-size: 36px;
   font-weight: 400;
+  font-size: 36px;
   line-height: 36px;
 }
 
 .form__subtitle {
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
 }
 
 .form__info {
@@ -23,11 +23,10 @@
 }
 
 .form__input-list-input {
-  text-transform: uppercase;
-  color: $color-charcoal;
-  font-family: inherit;
-
   line-height: 18px;
+  font-family: inherit;
+  color: $color-charcoal;
+  text-transform: uppercase;
 }
 
 .form__purpose {
@@ -40,9 +39,9 @@
 }
 
 .form__legend {
-  color: rgba(0, 0, 0, 1);
   font-size: 24px;
   line-height: 26px;
+  color: $color-black;
 }
 
 .form__comment {
@@ -54,15 +53,14 @@
 }
 
 .form__button {
-
   line-height: 20px;
   font-family: inherit;
   text-transform: uppercase;
 }
 
 .form__text {
-  text-transform: none;
   font-size: 14px;
   line-height: 16px;
   font-family: $ff-lato;
+  text-transform: none;
 }
