@@ -1,0 +1,19 @@
+.contacts {
+  padding: 26px 0 26px 0;
+}
+
+.contacts__title {
+  margin: 0;
+
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__description {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $ff-lato;
+}

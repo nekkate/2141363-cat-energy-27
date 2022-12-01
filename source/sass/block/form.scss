@@ -1,0 +1,66 @@
+.form__form-container {
+  text-transform: uppercase;
+}
+
+.form__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.form__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.form__info {
+  border: none;
+}
+
+.form__input-list-item {
+  line-height: 18px;
+}
+
+.form__input-list-input {
+  line-height: 18px;
+  font-family: inherit;
+  color: $color-charcoal;
+  text-transform: uppercase;
+}
+
+.form__purpose {
+  border: none;
+}
+
+
+.form__contacts {
+  border: none;
+}
+
+.form__legend {
+  font-size: 24px;
+  line-height: 26px;
+  color: $color-black;
+}
+
+.form__comment {
+  border: none;
+}
+
+.form__additionally {
+  border: none;
+}
+
+.form__button {
+  line-height: 20px;
+  font-family: inherit;
+  text-transform: uppercase;
+}
+
+.form__text {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $ff-lato;
+  text-transform: none;
+}

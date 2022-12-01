@@ -1,0 +1,18 @@
+.catalog-additionally__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.catalog-additionally__present {
+  display: block;
+  width: 280px;
+  height: 290px;
+
+  line-height: 20px;
+  font-family: $ff-lato;
+  color: $color-white;
+
+  background: linear-gradient(to top, rgba($color-apple, 0.85), rgba($color-apple, 0.85)),
+  url("../img/catalog/background-additionally.jpg");
+}

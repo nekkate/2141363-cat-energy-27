@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Интернет-магазин функционального питания для котиков.</title>
   </head>
   <body>
     <header class="main-header">
       <a class="main-header__logo">
-        <img src="#" width="33" height="33" alt="Логотип Кэт Энерджи." >
+        <img src="#" width="33" height="33" alt="Логотип Кэт Энерджи." />
       </a>
       <nav class="main-header__nav">
         <button class="main-header__nav-toggle" type="button">
@@ -17,7 +18,7 @@
         </button>
         <ul class="main-header__nav-list">
           <li class="main-header__nav-item">
-            <span class="main-header__nav-link">Главная</span>
+            <a class="main-header__nav-link" href="index.html">Главная</a>
           </li>
           <li class="main-header__nav-item">
             <a class="main-header__nav-link" href="catalog.html"
@@ -25,8 +26,8 @@
             >
           </li>
           <li class="main-header__nav-item">
-            <a  class="main-header__nav-link main-header__nav-link--current" href="form.html"
-              >Подбор программы</a
+            <span class="main-header__nav-link main-header__nav-link--current"
+              >Подбор программы</span
             >
           </li>
         </ul>
@@ -52,25 +53,25 @@
                 required
                 name="name"
                 value="Барсик"
-            ></label>
-            <label class="form__input-list"
+            /></label>
+            <label class="form__input-list-item"
               >Вес (кг):*
               <input
-                class="form__input-list-item"
+                class="form__input-list-input"
                 type="number"
                 required
                 name="weight"
                 value="7"
-            ></label>
-            <label class="form__input-list"
+            /></label>
+            <label class="form__input-list-item"
               >Возраст (лет):*
               <input
-                class="form__input-list-item"
+                class="form__input-list-input"
                 type="number"
                 required
                 name="years"
                 value="7"
-            ></label>
+            /></label>
           </div>
         </fieldset>
         <fieldset class="form__purpose">
@@ -82,27 +83,27 @@
                 checked
                 name="purpose"
                 value="weight-loss"
-              >
+              />
               <span class="form__radio-list-mark"></span>
               Похудение
             </label>
             <label class="form__radio-list-item"
               ><input
-              class="form__radio-list-input"
+                class="form__radio-list-input"
                 type="radio"
                 name="purpose"
                 value="weight-gain"
-              >
+              />
               <span class="form__radio-list-mark"></span>
               Набор массы
             </label>
             <label class="form__radio-list-item"
               ><input
-              class="form__radio-list-input"
+                class="form__radio-list-input"
                 type="radio"
                 name="purpose"
                 value="i-dont-no"
-              >
+              />
               <span class="form__radio-list-mark"></span>
               Не знаю (Нужен ваш совет)
             </label>
@@ -121,7 +122,7 @@
                 required
                 name="email"
                 value="kuklachev@gmail.com"
-            ></label>
+            /></label>
             <label class="form__input-list-item"
               >Телефон:*
               <input
@@ -130,25 +131,23 @@
                 required
                 name="phone"
                 value="8 (960) 900-60-90"
-            ></label>
+            /></label>
           </div>
         </fieldset>
         <fieldset class="form__comment">
-          <legend class="form__legend">
-            Комментарий
-          </legend>
-          <label class="form__input-list-item">
-            <input
-              class="form__input-list-input"
-              type="text"
-              name="comment"
-              placeholder="Расскажите обо всех повАдках кота"
-          ></label>
+          <legend class="form__legend">Комментарий</legend>
+
+          <textarea
+            class="form__input-list-input"
+            name="comment"
+            rows="7"
+            wrap="soft"
+          >
+Расскажите обо всех повАдках кота
+          </textarea>
         </fieldset>
         <fieldset class="form__additionally">
-          <legend class="form__legend">
-            Дополнительно
-          </legend>
+          <legend class="form__legend">Дополнительно</legend>
           <div class="form__checkbox-list">
             <label class="form__checkbox-list-item"
               ><input
@@ -157,7 +156,7 @@
                 checked
                 name="additionally"
                 value="sweetener"
-              >
+              />
               <span class="form__checkbox-list-mark"></span>
               сахарозаменитель
             </label>
@@ -167,7 +166,7 @@
                 type="checkbox"
                 name="additionally"
                 value="drinking-water"
-              >
+              />
               <span class="form__checkbox-list-mark"></span>
               Питьевая вода
             </label>
@@ -177,7 +176,7 @@
                 type="checkbox"
                 name="additionally"
                 value="milk"
-              >
+              />
               <span class="form__checkbox-list-mark"></span>
               Молоко
             </label>
@@ -187,7 +186,7 @@
                 type="checkbox"
                 name="additionally"
                 value="vitamins"
-              >
+              />
               <span class="form__checkbox-list-mark"></span>
               Витамины
             </label>
@@ -200,7 +199,7 @@
       </form>
       <section class="contacts">
         <h2 class="contacts__title">
-          приглашаем<br >к сотрудничеству дилеров!
+          приглашаем<br />к сотрудничеству дилеров!
         </h2>
         <p class="contacts__description">
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
@@ -209,7 +208,7 @@
     </main>
     <footer class="main-footer">
       <a class="main-footer__logo">
-        <img  src="#" width="128" height="24" alt="Логотип Cat Energy.">
+        <img src="#" width="128" height="24" alt="Логотип Cat Energy." />
       </a>
       <ul class="main-footer__list">
         <li class="main-footer__item main-footer__item--vk">
@@ -228,7 +227,12 @@
       </ul>
       <a class="main-footer__logo-html">
         HTML Academy
-        <img src="https://htmlacademy.ru/" width="33" height="33" alt="Логотип HTML Академии." >
+        <img
+          src="https://htmlacademy.ru/"
+          width="33"
+          height="33"
+          alt="Логотип HTML Академии."
+        />
       </a>
     </footer>
   </body>

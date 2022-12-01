@@ -1,1 +1,15 @@
-// Начните писать стили здесь
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/reboot.scss";
+@import "global/utils.scss";
+@import "block/main-header.scss";
+@import "block/intro.scss";
+@import "block/programs.scss";
+@import "block/work.scss";
+@import "block/examples.scss";
+@import "block/contacts.scss";
+@import "block/main-footer.scss";
+@import "block/catalog.scss";
+@import "block/catalog-additionally.scss";
+@import "block/additionally.scss";
+@import "block/form.scss";

@@ -1,0 +1,25 @@
+.additionally__list {
+  list-style-type: none;
+}
+
+
+.additionally__title {
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.additionally__description {
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $ff-lato;
+}
+
+.additionally__button {
+  line-height: 20px;
+  font-family: inherit;
+  color: $color-white;
+  text-transform: uppercase;
+
+  background-color: $color-apple;
+}

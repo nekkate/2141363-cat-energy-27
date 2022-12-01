@@ -1,0 +1,44 @@
+.example {
+  padding: 25px 0 40px 0;
+
+  background-color: $color-white;
+}
+
+.example__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.example__title {
+  margin: 0 0 40px 0;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__description {
+  margin: 0 0 20px 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $ff-lato;
+}
+
+.example__item-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__item-description {
+  font-size: 12px;
+  line-height: 12px;
+  font-family: $ff-lato;
+}
+
+.example__text {
+  text-transform: uppercase;
+}

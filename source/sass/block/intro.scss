@@ -1,0 +1,56 @@
+.intro {
+  margin: 0 0 20px 0;
+  padding: 0;
+
+  color: $color-white;
+
+  background-repeat: no-repeat;
+}
+
+.intro__container {
+  height: 305px;
+
+  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+  url("../img/index/background-intro.jpg");
+  background-repeat: no-repeat;
+}
+
+.intro__container-img {
+  margin-top: -135px;
+}
+
+
+.intro__title {
+  margin: 0 0 25px 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.intro__text {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.intro__img {
+  margin: 0 0 29px 0;
+}
+
+.intro__button {
+  display: block;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-family: inherit;
+  color: $color-white;
+  text-transform: uppercase;
+
+  background-color: $color-apple;
+  border: none;
+}

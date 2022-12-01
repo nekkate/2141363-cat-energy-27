@@ -1,0 +1,36 @@
+.programs {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.programs__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.programs__item {
+  background-color: $color-white-smoke;
+}
+
+.programs__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $ff-lato;
+}
+
+.programs__button {
+  line-height: 16px;
+  font-family: inherit;
+  text-transform: uppercase;
+
+  border: none;
+}
