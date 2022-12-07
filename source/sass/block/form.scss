@@ -6,16 +6,27 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  margin: 0 0 37px 0;
+  padding: 0;
 }
 
 .form__subtitle {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+
+  margin: 0 0 39px 0;
+  padding: 0;
 }
 
 .form__info {
   border: none;
+}
+
+.form__input-list {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__input-list-item {
@@ -31,6 +42,11 @@
 
 .form__purpose {
   border: none;
+}
+
+.form__radio-list {
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -52,10 +68,34 @@
   border: none;
 }
 
+.form__checkbox-list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $vp-768) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $vp-1024) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.form__button-wrapper {
+  @media (min-width: $vp-768) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .form__button {
   line-height: 20px;
   font-family: inherit;
   text-transform: uppercase;
+
+  width: 100%;
+  padding: 7px 10px;
 }
 
 .form__text {

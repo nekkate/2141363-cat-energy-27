@@ -1,3 +1,27 @@
+.main-footer {
+  background-color: $color-white-smoke;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 57px 0;
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 67px 70px;
+  }
+}
+
 .main-footer__logo-html {
   line-height: 19px;
   font-family: $ff-lato;

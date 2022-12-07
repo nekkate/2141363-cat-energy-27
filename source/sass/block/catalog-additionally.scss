@@ -4,10 +4,22 @@
   line-height: 24px;
 }
 
+.catalog-additionally__wrapper {
+  @media (min-width: $vp-1024) {
+    display: grid;
+
+    column-gap: 79px;
+
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
 .catalog-additionally__present {
   display: block;
+  align-self: center;
   width: 280px;
   height: 290px;
+  margin: 0;
 
   line-height: 20px;
   font-family: $ff-lato;
@@ -15,4 +27,21 @@
 
   background: linear-gradient(to top, rgba($color-apple, 0.85), rgba($color-apple, 0.85)),
   url("../img/catalog/background-additionally.jpg");
+  background-position: cover;
+
+  @media (min-width: $vp-768) {
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: $vp-1024) {
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    grid-column: 3;
+  }
 }

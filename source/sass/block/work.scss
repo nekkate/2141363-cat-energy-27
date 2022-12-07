@@ -1,21 +1,50 @@
 .work {
   margin: 0 0 49px 0;
   padding: 0;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 69px;
+  }
 }
 
 .work__title {
   margin: 0 0 40px 0;
+  padding: 0;
 
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 32px 0;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .work__list {
+  display: grid;
   margin: 0;
   padding: 0;
 
   list-style-type: none;
+
+  @media (min-width: $vp-768) {
+    gap: 55% 13%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $vp-1024) {
+    justify-content: space-between;
+
+    gap: 31% 15%;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .work__item {
@@ -29,4 +58,9 @@
   font-size: 14px;
   line-height: 18px;
   font-family: $ff-lato;
+
+  @media (min-width: $vp-768) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

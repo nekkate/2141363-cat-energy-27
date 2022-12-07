@@ -1,22 +1,88 @@
 .intro {
   margin: 0 0 20px 0;
-  padding: 0;
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+  }
+
+  @media (min-width: $vp-1024) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 -20px;
 
   color: $color-white;
 
   background-repeat: no-repeat;
+
+  @media (min-width: $vp-1024) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .intro__container {
-  height: 305px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  min-height: 302px;
 
   background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
   url("../img/index/background-intro.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $vp-768) {
+    padding: 0 207px 20px 87px;
+
+    color: $color-black;
+
+    background: none;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding: 82px 0 131px 0;
+  }
 }
 
 .intro__container-img {
-  margin-top: -135px;
+  display: flex;
+  flex-direction: column;
+  margin: -135px 0 0 0;
+
+  @media (min-width: $vp-768) {
+    position: relative;
+
+    margin: 0;
+  }
+
+  @media (min-width: $vp-1024) {
+    min-width: 440px;
+  }
+}
+
+.intro__img {
+  margin: 0 0 3px 0;
+
+  @media (min-width: $vp-768) {
+    min-width: 709px;
+    min-height: 609px;
+    margin: 0;
+  }
+
+  @media (min-width: $vp-1024) {
+    min-width: 552px;
+    min-height: 499px;
+  }
 }
 
 
@@ -27,6 +93,15 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  text-align: center;
+
+  @media (min-width: $vp-768) {
+    display: block;
+    margin: 0 0 41px 0;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .intro__text {
@@ -36,21 +111,30 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-}
 
-.intro__img {
-  margin: 0 0 29px 0;
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .intro__button {
   display: block;
+  width: 280px;
+  padding: 7px 20px;
 
   font-size: 14px;
   line-height: 18px;
-  font-family: inherit;
-  color: $color-white;
-  text-transform: uppercase;
 
-  background-color: $color-apple;
-  border: none;
+  @media (min-width: $vp-768) {
+    position: absolute;
+    top: 29px;
+    left: 91px;
+
+    width: 244px;
+    padding: 14px 20px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
