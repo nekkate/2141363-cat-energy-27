@@ -1,16 +1,16 @@
 .main-header {
-padding: 10px 0 0 0;
-margin: 0 0 17px;
+  margin: 0 0 17px;
+  padding: 10px 0 0 0;
 
-@media (min-height: $vp-768) {
-  padding: 24px 0 0 0;
-  margin: 0 0 62px 0;
-}
+  @media (min-height: $vp-768) {
+    margin: 0 0 62px 0;
+    padding: 24px 0 0 0;
+  }
 
-@media (min-height: $vp-1024) {
-  padding: 53px 0 0 0;
-  margin: 0 0 29px 0;
-}
+  @media (min-height: $vp-1024) {
+    margin: 0 0 29px 0;
+    padding: 53px 0 0 0;
+  }
 }
 
 .main-header__wrapper {
@@ -30,7 +30,6 @@ margin: 0 0 17px;
   }
 
   @media (min-width: $vp-1024) {
-
     font-size: 20px;
     line-height: 30px;
   }
