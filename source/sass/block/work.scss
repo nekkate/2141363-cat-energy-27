@@ -34,6 +34,8 @@
 
   list-style-type: none;
 
+  row-gap: 20px;
+
   @media (min-width: $vp-768) {
     gap: 55% 13%;
     grid-template-columns: repeat(2, 1fr);
@@ -42,7 +44,6 @@
   @media (min-width: $vp-1024) {
     justify-content: space-between;
 
-    gap: 31% 15%;
     grid-template-columns: repeat(4, 1fr);
   }
 }

@@ -1,28 +1,41 @@
 .example {
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
 
   background-color: $color-whisper;
 
   @media (min-width: $vp-768) {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 49%, rgba(234, 234, 234, 1) 49%, rgba(234, 234, 234, 1) 57%, rgba(234, 234, 234, 1) 100%);
-  }
-
-  @media (min-width: $vp-1024) {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 23%, rgba(234, 234, 234, 1) 23%, rgba(234, 234, 234, 1) 100%, rgba(234, 234, 234, 1) 100%);
+    background-color: $color-white;
   }
 }
 
 .example__wrapper {
+  padding: 25px 0 40px 0;
+
+
+  @media (min-width: $vp-768) {
+    padding: 0;
+  }
+
   @media (min-width: $vp-1024) {
-    margin: 0 -40px;
-    padding: 0 40px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 40px 75px 40px;
+
+    background-color: $color-whisper;
   }
 }
 
 .example__wrapper-list {
+  padding: 0 20px;
+
   @media (min-width: $vp-768) {
-    padding-bottom: 250px;
+    padding: 0 30px 250px 30px;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding: 0;
   }
 }
 
@@ -37,12 +50,7 @@
   grid-template-columns: repeat(2, 124px);
 }
 
-.example__wrapper-slider {
-  @media (min-width: $vp-768) {
-    margin: 0 -30px;
-    padding: 0 30px;
-  }
-}
+
 
 .example__list-cat-slider {
   margin: 0;
@@ -54,18 +62,22 @@
 
 .example__title {
   margin: 0 0 40px 0;
+  padding: 0 20px;
 
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
 
   @media (min-width: $vp-768) {
+    padding: 0 30px;
+
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $vp-1024) {
     margin-bottom: 100px;
+    padding: 0 40px;
   }
 }
 
@@ -118,13 +130,38 @@
 }
 
 .example__text {
-  align-self: center;
+  display: block;
+  margin: 0;
 
   font-size: 14px;
   line-height: 20px;
+  text-align: center;
+  text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $vp-768) {
     font-size: 20px;
+    text-align: left;
+  }
+}
+
+
+.example__wrapper-slider {
+  padding: 0 20px;
+
+  @media (min-width: $vp-768) {
+    padding: 0;
+
+    background-color: $color-whisper;
+  }
+}
+
+.example__list-cat-slider-img {
+  align-self: center;
+
+  @media (min-width: $vp-768) {
+    width: 560px;
+    height: 512px;
+    margin: -230px 0 0 0;
   }
 }

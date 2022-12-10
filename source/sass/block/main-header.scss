@@ -1,15 +1,13 @@
 .main-header {
   margin: 0 0 17px;
-  padding: 10px 0 0 0;
+
 
   @media (min-height: $vp-768) {
     margin: 0 0 62px 0;
-    padding: 24px 0 0 0;
   }
 
   @media (min-height: $vp-1024) {
     margin: 0 0 29px 0;
-    padding: 53px 0 0 0;
   }
 }
 
@@ -17,6 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0 0 0;
 
   font-weight: 500;
   font-size: 20px;
@@ -25,11 +24,15 @@
 
 
   @media (min-width: $vp-768) {
+    padding: 24px 0 0 0;
+
     font-size: 18px;
     line-height: 24px;
   }
 
   @media (min-width: $vp-1024) {
+    padding: 53px 0 0 0;
+
     font-size: 20px;
     line-height: 30px;
   }
@@ -101,7 +104,9 @@
   color: $color-black;
   text-decoration: none;
 
-  @media (min-width: $vp-1024) {
-    color: $color-white;
+  &--main {
+    @media (min-width: $vp-1024) {
+      color: $color-white;
+    }
   }
 }

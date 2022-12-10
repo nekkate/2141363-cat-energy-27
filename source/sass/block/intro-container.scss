@@ -1,0 +1,11 @@
+.intro-container {
+  @media (min-width: $vp-1024) {
+    margin: 0 0 82px 0;
+
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 100%),
+    url("../img/index/background-intro.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+  }
+}
