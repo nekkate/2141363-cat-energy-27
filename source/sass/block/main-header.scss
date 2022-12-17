@@ -15,6 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 10px 0 0 0;
 
   font-weight: 500;
@@ -40,6 +41,10 @@
 
 .main-header__nav {
   position: relative;
+}
+
+.main-header__nav-item {
+  margin: 0 30px 0 0;
 }
 
 
@@ -81,6 +86,7 @@
   padding: 0;
 
   list-style-type: none;
+  flex-wrap: wrap;
 
   @media (min-width: $vp-768) {
     position: relative;
@@ -93,7 +99,8 @@
   @media (min-width: $vp-1024) {
     display: flex;
     justify-content: space-between;
-    min-width: 478px;
+
+    max-width: 690px;
   }
 }
 
