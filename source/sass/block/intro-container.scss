@@ -1,19 +1,34 @@
 .intro-container::before {
 
+
   @media (min-width: $vp-1024) {
     content: "";
-    width: 730px;
-    height: 500px;
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 100%),
-    url("../img/index/background-intro.jpg");
     position: absolute;
     left: 50%;
     z-index: -1;
 
-    margin: 0 0 82px 0;
+    min-width: 640px;
+    height: 694px;
 
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
+    background-image: url(../img/index/background-intro.jpg);
+    background-position: top left;
+    background-size: cover;
   }
 }
+
+.intro-container::after {
+
+  @media (min-width: $vp-1024) {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;;
+    z-index: -1;
+
+    min-width: 640px;
+    height: 694px;
+
+    background: rgba(104, 183, 56, 0.85);
+  }
+}
+
