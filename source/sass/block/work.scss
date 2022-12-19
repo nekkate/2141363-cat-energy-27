@@ -50,7 +50,59 @@
 
 .work__item {
   margin: 0;
+  display: grid;
+  grid-template-columns: 60px auto;
+  column-gap: 20px;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $color-apple;
+  }
+
+  &--step1::before {
+    background-image: url("/img/index/step-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--step2::before {
+    background-image: url("/img/index/step-2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--step3::before {
+    background-image: url("/img/index/step-3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--step4::before {
+    background-image: url("/img/index/step-4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--step1::after {
+      content: "1";
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
 }
+
 
 .work__description {
   margin: 0;
