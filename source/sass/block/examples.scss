@@ -37,6 +37,7 @@
     justify-content: space-between;
 
     row-gap: 54px;
+    align-items: center;
   }
 
   @media (min-width: $vp-1024) {
@@ -119,7 +120,7 @@
 .example__item-title {
   width: 100%;
   margin: 0;
-  padding: 14px 0 18px 0;
+  padding: 14px 5px 18px 5px;
   text-align: center;
 
   font-weight: 400;
@@ -130,10 +131,8 @@
   border-radius: 3px;
 
 
-
-
   @media (min-width: $vp-768) {
-    margin-bottom: 11px;
+    padding: 15px 5px 20px 5px;
 
     font-size: 30px;
     line-height: 37px;
@@ -155,6 +154,12 @@
   @media (min-width: $vp-768) {
     font-size: 14px;
     line-height: 14px;
+    margin: -7px 0 0 0;
+    background-color: $color-white;
+  }
+
+  @media (min-width: $vp-768) {
+    background-color: $color-whisper;
   }
 }
 

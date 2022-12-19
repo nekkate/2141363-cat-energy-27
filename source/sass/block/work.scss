@@ -37,14 +37,20 @@
   row-gap: 20px;
 
   @media (min-width: $vp-768) {
-    gap: 55% 13%;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,280px);
+    column-gap: 153px;
+    row-gap: 37px;
+    padding: 0 75px 0 0;
   }
 
   @media (min-width: $vp-1024) {
     justify-content: space-between;
 
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 280px);
+    padding: 0;
+    column-gap: 77px;
   }
 }
 
@@ -99,6 +105,40 @@
       position: absolute;
       right: 0;
       top: 0;
+      z-index: -1;
+    }
+
+    &--step2::after {
+      content: "2";
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+
+    &--step3::after {
+      content: "3";
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+
+    &--step4::after {
+      content: "4";
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
     }
   }
 }

@@ -32,29 +32,111 @@
   display: grid;
 
   row-gap: 13px;
+  padding: 11px 0 14px 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $color-silver;
+    position: absolute;
+    top: -8px;
+  }
 
   @media (min-width: $vp-768) {
     display: flex;
     flex-direction: column;
     padding: 0 36px 39px 36px;
 
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 73px, rgba(242, 242, 242, 1) 73px);
+
     row-gap: 33px;
-    background: linear-gradient(180deg, rgba(255,255,255,1) 16%, rgba(242,242,242,1) 16%);
+
+    &::before {
+      display: none;
+    }
   }
 
   @media (min-width: $vp-1024) {
     padding: 0 30px 40px 35px;
-
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 80px, rgba(242, 242, 242, 1) 80px);
   }
 
   &--all {
     @media (min-width: $vp-768) {
       justify-content: center;
+      justify-content: flex-end;
       align-items: center;
+      height: calc(100% - 73px);
+      margin: 73px 0 0 0;
+      padding: 161px 37px 38px 38px;
 
-      background: linear-gradient(180deg, rgba(255,255,255,1) 27px, rgba(255,50,0,1) 27px);
+      background: $color-white;
       border: 2px solid $color-whisper;
+      row-gap: 87px;
+
+      &::before {
+        content: "";
+        top: 52px;
+
+        width: 0;
+        height: 60px;
+        position: absolute;
+
+        border: 1px solid $color-whisper;
+      }
+
+      &::after {
+        content: "";
+        top: 82px;
+
+        width: 60px;
+        height: 0;
+        position: absolute;
+
+        border: 1px solid $color-whisper;
+      }
     }
+
+    @media (min-width) {
+      margin: 80px 0 0 0;
+      padding: 161px 40px 38px 40px;
+
+      &::before {
+        content: "";
+        top: 51px;
+
+        width: 0;
+        height: 60px;
+        position: absolute;
+
+        border: 1px solid $color-whisper;
+      }
+
+      &::after {
+        content: "";
+        top: 81px;
+
+        width: 60px;
+        height: 0;
+        position: absolute;
+
+        border: 1px solid $color-whisper;
+      }
+    }
+  }
+}
+
+.catalog__product-card-all {
+  text-align: center;
+
+  @media (min-width: $vp-768) {
+    padding: 0 65px;
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 0;
   }
 }
 
@@ -127,6 +209,8 @@
     border: none;
 
     @media (min-width: $vp-768) {
+      width: 100%;
+
     }
   }
 
@@ -142,6 +226,10 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 23px 0;
+  }
 }
 
 .catalog__product-all-text {

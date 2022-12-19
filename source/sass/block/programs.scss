@@ -18,15 +18,14 @@
 
   list-style-type: none;
 
-  row-gap: 20px;
+  gap: 20px;
 
   @media (min-width: $vp-768) {
-    row-gap: 30px;
+    gap: 30px;
   }
 
   @media (min-width: $vp-1024) {
-    column-gap: 80px;
-
+    gap: 80px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -40,26 +39,34 @@
   padding: 21px 33px 18px 19px;
 
   @media (min-width: $vp-768) {
-    padding: 77px 62px 53px 52px;
-    background-color: #f2f2f2;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    padding: 77px 62px 53px 52px;
+
     column-gap: 54px;
+
+    background-color: #f2f2f2;
+
+    grid-template-columns: 2fr 1fr;
   }
+
+  @media (min-width: $vp-1024) {
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  }
+
 
   &::before {
     content: "";
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50px;
     height: 50px;
 
     background-color: $color-apple;
     border-radius: 50%;
-
-    display: flex;
-      justify-content: center;
-      align-items: center;
-
   }
 
   &--weightloss::before {
@@ -71,31 +78,47 @@
 
 
     @media (min-width: $vp-768) {
+      position: relative;
+
       width: 200px;
       height: 200px;
-      position: relative;
+
       grid-column: 2;
       grid-row: 1/2;
+    }
 
+    @media (min-width: $vp-1024) {
+      position: absolute;
+
+      width: 100px;
+      height: 100px;
     }
   }
 
   &--weightgain::before {
     content: url("/img/index/weightgain-icon.png");
     position: absolute;
+
     width: 50px;
     height: 50px;
 
     @media (min-width: $vp-768) {
+      position: relative;
+
       width: 200px;
       height: 200px;
-      position: relative;
+
       grid-column: 2;
       grid-row: 1/2;
+    }
 
+    @media (min-width: $vp-1024) {
+      position: absolute;
+
+      width: 100px;
+      height: 100px;
     }
   }
-
 }
 
 .programs__card {
@@ -133,10 +156,15 @@
 
   @media (min-width: $vp-768) {
     margin-bottom: 24px;
+    padding: 0;
 
     font-size: 36px;
     line-height: 36px;
-    padding: 0;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding: 36px 0 0 162px;
+    margin: 0 0 73px 0;
   }
 }
 
@@ -173,7 +201,8 @@
   @media (min-width: $vp-768) {
     font-size: 20px;
     line-height: 30px;
-    background-color: inherit
+
+    background-color: inherit;
   }
 
   &::after {
@@ -181,9 +210,6 @@
 
     width: 24px;
     height: 12px;
-
     padding: 0 0 0 15px;
-
-
   }
 }

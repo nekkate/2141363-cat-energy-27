@@ -19,6 +19,14 @@
 
   list-style-type: none;
 
+  @media (min-width: $vp-768) {
+    border: 1px solid $color-silver;
+    padding: 26px 0;
+    display: grid;
+    row-gap: 56px;
+    position: relative;
+  }
+
   @media (min-width: $vp-1024) {
     display: grid;
     row-gap: 42px;
@@ -35,6 +43,18 @@
 .additionally__list-item {
   @media (min-width: $vp-768) {
     display: grid;
+    padding: 0 38px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      position: absolute;
+      height: 1px;
+      background-color: $color-silver;
+      left: 0;
+      bottom: -28px;
+    }
   }
 
   @media (min-width: $vp-1024) {
@@ -90,5 +110,6 @@ additionally__item-definition {
   @media (min-width: $vp-1024) {
     padding: 7px 26px;
     width: 244px;
+    
   }
 }
