@@ -35,9 +35,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 
     row-gap: 54px;
-    align-items: center;
   }
 
   @media (min-width: $vp-1024) {
@@ -50,9 +50,9 @@
 .example__list {
   display: grid;
   justify-content: center;
+  align-items: flex-start;
   margin: 0 0 20px 0;
   padding: 0;
-  align-items: flex-start;
 
   list-style-type: none;
   column-gap: 32px;
@@ -121,11 +121,11 @@
   width: 100%;
   margin: 0;
   padding: 14px 5px 18px 5px;
-  text-align: center;
 
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
 
   border: 1px solid $color-very-light-grey;
   border-radius: 3px;
@@ -141,20 +141,23 @@
 
 .example__item-description {
   position: relative;
-  background-color: $color-whisper;
 
   margin: -9px 0 0 0;
   padding: 0 10px;
-  text-align: center;
 
   font-size: 12px;
   line-height: 12px;
   font-family: $ff-lato;
+  text-align: center;
+
+  background-color: $color-whisper;
 
   @media (min-width: $vp-768) {
+    margin: -7px 0 0 0;
+
     font-size: 14px;
     line-height: 14px;
-    margin: -7px 0 0 0;
+
     background-color: $color-white;
   }
 

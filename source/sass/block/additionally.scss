@@ -9,7 +9,6 @@
     margin: 0;
 
     grid-column: 1/2;
-
   }
 }
 
@@ -20,15 +19,19 @@
   list-style-type: none;
 
   @media (min-width: $vp-768) {
-    border: 1px solid $color-silver;
-    padding: 26px 0;
-    display: grid;
-    row-gap: 56px;
     position: relative;
+
+    display: grid;
+    padding: 26px 0;
+
+    border: 1px solid $color-silver;
+
+    row-gap: 56px;
   }
 
   @media (min-width: $vp-1024) {
     display: grid;
+
     row-gap: 42px;
   }
 }
@@ -42,18 +45,21 @@
 
 .additionally__list-item {
   @media (min-width: $vp-768) {
+    position: relative;
+
     display: grid;
     padding: 0 38px;
-    position: relative;
 
     &::after {
       content: "";
-      width: 100%;
       position: absolute;
-      height: 1px;
-      background-color: $color-silver;
-      left: 0;
       bottom: -28px;
+      left: 0;
+
+      width: 100%;
+      height: 1px;
+
+      background-color: $color-silver;
     }
   }
 
@@ -108,8 +114,7 @@ additionally__item-definition {
   }
 
   @media (min-width: $vp-1024) {
-    padding: 7px 26px;
     width: 244px;
-    
+    padding: 7px 26px;
   }
 }
