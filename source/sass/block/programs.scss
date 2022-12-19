@@ -1,20 +1,143 @@
 .programs {
   margin: 0 0 20px 0;
-  padding: 0;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 71px;
+  }
 }
 
 .programs__list {
+  display: grid;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 
   list-style-type: none;
+
+  row-gap: 20px;
+
+  @media (min-width: $vp-768) {
+    row-gap: 30px;
+  }
+
+  @media (min-width: $vp-1024) {
+    column-gap: 80px;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.programs__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 21px 33px 18px 19px;
+
+  @media (min-width: $vp-768) {
+    padding: 77px 62px 53px 52px;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 54px;
+  }
+
+  &::before {
+    content: "";
+
+    width: 50px;
+    height: 50px;
+
+    background-color: $color-apple;
+    border-radius: 50%;
+
+    display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+
+  &--weightloss::before {
+    content: url("/img/index/weightloss-icon.png");
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+
+
+    @media (min-width: $vp-768) {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      grid-column: 2;
+      grid-row: 1/2;
+
+    }
+  }
+
+  &--weightgain::before {
+    content: url("/img/index/weightgain-icon.png");
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+    @media (min-width: $vp-768) {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      grid-column: 2;
+      grid-row: 1/2;
+
+    }
+  }
+
+}
+
+.programs__card {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: $color-gainsboro;
+
+
+    @media (min-width: $vp-768) {
+      display: none;
+    }
+  }
 }
 
 .programs__title {
+  min-height: 50px;
+  margin: 0 0 22px 0;
+  padding: 0 0 0 91px;
+
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 24px;
+
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+  }
 }
 
 .programs__item {
@@ -22,15 +145,45 @@
 }
 
 .programs__text {
+  margin: 0 0 38px 0;
+  padding: 0;
+
   font-size: 14px;
   line-height: 18px;
   font-family: $ff-lato;
+
+  @media (min-width: $vp-768) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
+
+
 .programs__button {
+  position: relative;
+
   line-height: 16px;
   font-family: inherit;
+  text-align: left;
   text-transform: uppercase;
 
   border: none;
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 30px;
+    background-color: inherit
+  }
+
+  &::after {
+    content: url("/img/index/program-arrow.png");
+
+    width: 24px;
+    height: 12px;
+
+    padding: 0 0 0 15px;
+
+
+  }
 }

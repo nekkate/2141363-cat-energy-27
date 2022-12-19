@@ -1,0 +1,15 @@
+.button {
+  display: block;
+
+  font-family: inherit;
+  text-transform: uppercase;
+  text-align: center;
+
+  border: none;
+
+  &--green {
+    color: $color-white;
+
+    background-color: $color-apple;
+  }
+}

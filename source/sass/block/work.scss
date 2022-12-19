@@ -1,26 +1,108 @@
 .work {
   margin: 0 0 49px 0;
   padding: 0;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 69px;
+  }
 }
 
 .work__title {
   margin: 0 0 40px 0;
+  padding: 0;
 
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 32px 0;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .work__list {
+  display: grid;
   margin: 0;
   padding: 0;
 
   list-style-type: none;
+
+  row-gap: 20px;
+
+  @media (min-width: $vp-768) {
+    gap: 55% 13%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $vp-1024) {
+    justify-content: space-between;
+
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .work__item {
   margin: 0;
+  display: grid;
+  grid-template-columns: 60px auto;
+  column-gap: 20px;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $color-apple;
+  }
+
+  &--step1::before {
+    background-image: url("/img/index/step-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--step2::before {
+    background-image: url("/img/index/step-2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--step3::before {
+    background-image: url("/img/index/step-3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--step4::before {
+    background-image: url("/img/index/step-4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--step1::after {
+      content: "1";
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
 }
+
 
 .work__description {
   margin: 0;
@@ -29,4 +111,9 @@
   font-size: 14px;
   line-height: 18px;
   font-family: $ff-lato;
+
+  @media (min-width: $vp-768) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

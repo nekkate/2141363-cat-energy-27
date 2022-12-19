@@ -1,18 +1,50 @@
+.catalog-additionally {
+  @media (min-width: $vp-1024) {
+    margin: 0 0 86px 0;
+  }
+}
+
 .catalog-additionally__title {
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
 }
 
+.catalog-additionally__wrapper {
+  @media (min-width: $vp-1024) {
+    display: grid;
+
+    column-gap: 79px;
+
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
 .catalog-additionally__present {
-  display: block;
-  width: 280px;
-  height: 290px;
+  width: 100%;
+  margin: 0;
+  padding: 187px 61px 25px 58px;
 
   line-height: 20px;
   font-family: $ff-lato;
+  text-align: center;
   color: $color-white;
 
   background: linear-gradient(to top, rgba($color-apple, 0.85), rgba($color-apple, 0.85)),
   url("../img/catalog/background-additionally.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $vp-768) {
+    padding: 71px 124px 69px 422px;
+
+    text-align: left;
+  }
+
+  @media (min-width: $vp-1024) {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 185px 43px 43px 41px;
+    text-align: center;
+  }
 }
