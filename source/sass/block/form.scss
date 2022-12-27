@@ -1,5 +1,6 @@
 .form__form-container {
   padding: 27px 0 0 0;
+  overflow: hidden;
 
   text-transform: uppercase;
 
@@ -498,6 +499,7 @@
 .form__button-wrapper {
   display: flex;
   align-items: center;
+  flex-direction: column;
   margin: 0 0 32px 0;
 
   @media (min-width: $vp-768) {
