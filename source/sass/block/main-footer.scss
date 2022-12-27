@@ -3,6 +3,8 @@
 }
 
 .main-footer__wrapper {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,18 +22,30 @@
 }
 
 .main-footer__logo {
-  margin: 0;
+  margin: 0 0 52px 0;
+
+
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+  }
 }
 
 .main-footer__list {
   display: grid;
-  margin: 0;
+  margin: 0 0 43px 0;
   padding: 0;
 
   list-style-type: none;
   column-gap: 26px;
 
   grid-template-columns: repeat(3, 1fr);
+
+
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+  }
 }
 
 .main-footer__logo-html {
@@ -53,6 +67,7 @@
 
 .main-footer__logo-html-link {
   font-family: $ff-lato;
+
 
 
   @media (min-width: $vp-768) {
