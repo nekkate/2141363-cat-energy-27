@@ -53,6 +53,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: none;
     column-gap: 80px;
+    border: none;
   }
 }
 
@@ -126,7 +127,8 @@
   }
 
   @media (min-width: $vp-1024) {
-    margin: 80px 0 0 0;
+    margin: 0;
+    justify-content: end;
     padding: 161px 40px 38px 40px;
 
     &::before {
@@ -174,6 +176,8 @@
   @media (min-width: $vp-768) {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 }
 
@@ -184,10 +188,14 @@
 
   @media (min-width: $vp-768) {
     margin-bottom: 34px;
+    height: 200px;
+    width: 168px;
   }
 
   @media (min-width: $vp-1024) {
     margin-bottom: 46px;
+    width: 172px;
+    height: 196px;
   }
 }
 
@@ -195,6 +203,16 @@
   display: grid;
 
   row-gap: 18px;
+
+@media (min-width: $vp-768) {
+  row-gap: 21px;
+  width: 100%;
+}
+
+@media (min-width: $vp-1024) {
+  max-width: 169px;
+  row-gap: 22px;
+}
 }
 
 .catalog__product-title {
@@ -212,6 +230,11 @@
     text-align: center;
     width: 100%;
   }
+
+  @media (min-width: $vp-768) {
+    line-height: 21px;
+    padding: 2px 0;
+  }
 }
 
 .catalog__product-title-br {
@@ -224,16 +247,24 @@
 
 .catalog__product-description {
   display: grid;
-  margin: 0 0 9px 0;
+  margin: 0 0 8px 0;
 
   font-size: 12px;
   line-height: 16px;
   font-family: $ff-lato;
-
-  grid-template-rows: repeat(3, 1fr);
   row-gap: 2px;
 
 
+  @media (min-width: $vp-768) {
+    font-size: 16px;
+    row-gap: none;
+    margin: 0;
+    grid-template-rows: none;
+  }
+
+  @media (min-width: $vp-768) {
+    row-gap: 16px;
+  }
 }
 
 .catalog__description-item {
@@ -242,10 +273,30 @@
   display: flex;
   justify-content: space-between;
 
+
   @media (min-width: $vp-768) {
-    padding: 0 0 9px 0;
-    border-bottom: 1px solid $color-silver;
+    padding: 0;
   }
+
+  @media (min-width: $vp-1024) {
+    &:nth-child(3) {
+      margin: 0 0 9px 0;
+        }
+  }
+
+
+  &::after {
+    @media (min-width: $vp-768) {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    background-color:  $color-silver;
+    width: 100%;
+    height: 1px;
+  }
+  }
+
+
 }
 
 .catalog__description-definition {
@@ -254,6 +305,7 @@
 
 
 .catalog__product-link {
+  text-decoration: none;
   padding: 10px;
 
   line-height: 20px;
@@ -271,6 +323,7 @@
 
   @media (min-width: $vp-1024) {
     min-width: 39px;
+    justify-content: flex-end;
   }
 }
 

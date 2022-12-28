@@ -64,7 +64,7 @@
 .intro__container-img {
   display: flex;
   flex-direction: column;
-  transform: translateY(-35px);
+  transform: translateY(-30px);
 
   @media (min-width: $vp-768) {
     position: relative;
@@ -136,7 +136,7 @@
 
   font-size: 14px;
   line-height: 18px;
-  transform: translateY(302px);
+  transform: translateY(312px);
 
   @media (min-width: $vp-768) {
     position: relative;

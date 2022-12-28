@@ -78,25 +78,19 @@
           <button class="main-header__nav-toggle" type="button">
             <span class="visually-hidden">Открыть/закрыть меню.</span>
           </button>
-          <nav class="main-header__nav ">
+          <nav class="main-header__nav">
             <ul class="main-header__nav-list">
               <li class="main-header__nav-item">
-                <a
-                  class="main-header__nav-link main-header__nav-link--main"
-                  href="index.html"
-                  >Главная</a
-                >
+                <a class="main-header__nav-link" href="index.html">Главная</a>
               </li>
               <li class="main-header__nav-item">
-                <a
-                  class="main-header__nav-link main-header__nav-link--main"
-                  href="catalog.html"
+                <a class="main-header__nav-link" href="catalog.html"
                   >Каталог продукции</a
                 >
               </li>
               <li class="main-header__nav-item">
                 <span
-                  class="main-header__nav-link main-header__nav-link--current main-header__nav-link--main main-header__nav-link--main-current"
+                  class="main-header__nav-link main-header__nav-link--current"
                   >Подбор программы</span
                 >
               </li>
@@ -120,9 +114,10 @@
           <div class="form__main-wrapper">
             <div class="form__info">
               <div class="form__input-list">
-                <label class="form__input-list-item"
-                  >
-                  <p class="form__input-list-text form__input-list-text--name">Имя:*</p>
+                <label class="form__input-list-item">
+                  <p class="form__input-list-text form__input-list-text--name">
+                    Имя:*
+                  </p>
                   <input
                     class="form__input-list-input"
                     type="text"
@@ -131,7 +126,11 @@
                     value="Барсик"
                 /></label>
                 <label class="form__input-list-item"
-                  ><p class="form__input-list-text form__input-list-text--weight">Вес (кг):*</p>
+                  ><p
+                    class="form__input-list-text form__input-list-text--weight"
+                  >
+                    Вес (кг):*
+                  </p>
                   <input
                     class="form__input-list-input"
                     type="number"
@@ -140,7 +139,9 @@
                     value="7"
                 /></label>
                 <label class="form__input-list-item"
-                  ><p class="form__input-list-text form__input-list-text--year">Возраст (лет):*</p>
+                  ><p class="form__input-list-text form__input-list-text--year">
+                    Возраст (лет):*
+                  </p>
                   <input
                     class="form__input-list-input"
                     type="number"
@@ -162,7 +163,7 @@
                   />
                   <span class="form__radio-list-input-mark"></span>
                   <span class="form__radio-list-mark"></span>
-                  Похудение
+                  <span class="form__radio-list-text">Похудение</span>
                 </label>
                 <label class="form__radio-list-item"
                   ><input
@@ -173,7 +174,7 @@
                   />
                   <span class="form__radio-list-input-mark"></span>
                   <span class="form__radio-list-mark"></span>
-                  Набор массы
+                  <span class="form__radio-list-text">Набор массы</span>
                 </label>
                 <label class="form__radio-list-item"
                   ><input
@@ -184,7 +185,9 @@
                   />
                   <span class="form__radio-list-input-mark"></span>
                   <span class="form__radio-list-mark"></span>
-                  Не знаю (Нужен ваш совет)
+                  <span class="form__radio-list-text"
+                    >Не знаю (Нужен ваш совет)</span
+                  >
                 </label>
               </div>
             </fieldset>
@@ -205,16 +208,34 @@
                     required
                     name="email"
                     value="kuklachev@gmail.com"
-                /></label>
+                />
+                <svg class="form__input-list-item-icon" width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="0.65" y1="6" x2="0.65" y2="14" stroke="currentColor" stroke-width="1.3"/>
+                  <line x1="17.65" y1="6" x2="17.65" y2="14" stroke="currentColor" stroke-width="1.3"/>
+                  <line y1="13.35" x2="18" y2="13.35" stroke="currentColor" stroke-width="1.3"/>
+                  <line y1="1.35" x2="18" y2="1.35" stroke="currentColor" stroke-width="1.3"/>
+                  <path d="M17.35 3.1821L9.00002 9.67654L0.65 3.18209V1.65H3.5L9.00002 1.65H14H17.35V3.1821Z" stroke="currentColor" stroke-width="1.3"/>
+                  </svg>
+              </label>
                 <label class="form__input-list-item"
-                  ><p class="form__input-list-text form__input-list-text--phone">Телефон:*</p>
+                  ><p
+                    class="form__input-list-text form__input-list-text--phone"
+                  >
+                    Телефон:*
+                  </p>
                   <input
                     class="form__input-list-input"
                     type="text"
                     required
                     name="phone"
                     value="8 (960) 900-60-90"
-                /></label>
+                />
+                <svg class="form__input-list-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 8H15.5M15.5 8L13 5.5M15.5 8L13 10.5M5.5 0.5V5.5H2.5V10.5H5.5V15.5H3C1.5 15.5 0.5 14.5 0.5 13V3C0.5 1.5 1.5 0.5 3 0.5H5.5Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+
+
+              </label>
               </div>
             </fieldset>
           </div>
@@ -393,12 +414,20 @@
           </ul>
           <a class="main-footer__logo-html" href="https://htmlacademy.ru/">
             <span class="main-footer__logo-html-link">HTML Academy</span>
-            <img
-              src="./img/logo-html-academy.svg"
-              width="33"
-              height="33"
-              alt="Логотип HTML Академии."
-            />
+            <div class="main-footer__logo-img-html-link">
+              <svg
+                width="27"
+                height="34"
+                viewBox="0 0 27 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
           </a>
         </div>
       </div>

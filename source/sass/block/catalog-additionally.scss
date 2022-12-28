@@ -116,13 +116,14 @@ position: relative;
   }
 
   @media (min-width: $vp-1024) {
-    padding: 185px 43px 43px 41px;
+    padding: 185px 43px 42px 41px;
 
     text-align: center;
 
     grid-column: 3;
     grid-row: 1;
     margin: 0;
+    height: 100%;
 
     &::after {
       content: "";

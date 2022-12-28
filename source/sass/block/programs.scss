@@ -191,25 +191,45 @@
 .programs__button {
   position: relative;
 
+  margin: 0 15px 0 0;
+
   line-height: 16px;
   font-family: inherit;
   text-align: left;
+  color: $color-black;
   text-transform: uppercase;
+  text-decoration: none;
 
   border: none;
 
   @media (min-width: $vp-768) {
+    margin: 0 25px 0 0;
+
     font-size: 20px;
     line-height: 30px;
 
     background-color: inherit;
   }
+}
 
-  &::after {
-    content: url("/img/index/program-arrow.png");
 
-    width: 24px;
-    height: 12px;
-    padding: 0 0 0 15px;
+.programs__button-icon {
+  position: absolute;
+
+  width: 24px;
+  height: 20px;
+  overflow: hidden;
+
+  background-image: url("/img/index/program-arrow-hover-and-active.png");
+  background-repeat: no-repeat;
+  background-position: right;
+
+  &:hover {
+    width: 32px;
+    background-position: center;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

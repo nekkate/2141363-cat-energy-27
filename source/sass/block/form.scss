@@ -119,6 +119,8 @@
   display: flex;
   align-items: center;
 
+  position: relative;
+
   line-height: 18px;
   color: $color-charcoal;
 
@@ -130,6 +132,23 @@
   }
 }
 
+.form__input-list-item-icon {
+  position: absolute;
+  right: 18px;
+
+
+}
+
+.form__input-list-input:focus + .form__input-list-item-icon{
+  color: #68B738;
+}
+
+.form__input-list-input--error + .form__input-list-item-icon{
+  color: $color-light-coral;
+}
+
+
+
 .form__input-list-text {
   margin: 0;
 }
@@ -138,14 +157,15 @@
   width: auto;
   flex-grow: 1;
   margin: 0;
-  padding: 14px 35px 13px 20px;
+  padding: 14px 50px 13px 20px;
 
   line-height: 18px;
   font-family: inherit;
   color: $color-charcoal;
   text-transform: uppercase;
+  border: none;
 
-  border: 1px solid $color-whisper-1;
+  outline: 1px solid $color-whisper-1;
 
   &--comment {
     padding: 10px 12px 10px 15px;
@@ -158,6 +178,21 @@
   @media (min-width: $vp-768) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:hover {
+    outline: 1px solid $color-very-light-grey;
+  }
+
+  &:active {
+    outline: 2px solid $color-black;
+  }
+
+  &--error {
+
+    &:active {
+    outline: 2px solid $color-light-coral;
+    }
   }
 }
 
@@ -190,6 +225,8 @@
   }
 }
 
+
+
 .form__radio-list-item {
   position: relative;
 
@@ -202,6 +239,10 @@
 
   cursor: pointer;
 
+  &:disabled {
+    opacity: 0.3;
+  }
+
   @media (min-width: $vp-768) {
     min-height: 40px;
     padding-left: 60px;
@@ -210,6 +251,8 @@
     line-height: 30px;
   }
 }
+
+
 
 .form__radio-list-input[type="radio"]:checked+.form__radio-list-input-mark::before {
   content: "";
@@ -229,9 +272,13 @@
   }
 }
 
+.form__radio-list-input:focus-visible + .form__radio-list-input-mark {
+outline: 1px solid $color-silver;
+}
 
 
 .form__radio-list-input-mark {
+
   position: absolute;
   left: 0;
 
@@ -245,7 +292,12 @@
     width: 40px;
     height: 40px;
   }
+
+  &:hover {
+    border: 1px solid $color-silver;
+  }
 }
+
 
 
 .form__contacts-wrapper {
@@ -473,12 +525,20 @@
     min-height: 40px;
     padding-left: 60px;
   }
+
+  &:disabled {
+opacity: 0.3;
+  }
 }
 
 .form__checkbox-list-input[type="checkbox"]:checked+.form__checkbox-mark {
   background-image: url("/img/form/mark-square.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.form__checkbox-list-input:focus + .form__checkbox-mark {
+  outline: 1px solid $color-silver;
 }
 
 .form__checkbox-mark {
