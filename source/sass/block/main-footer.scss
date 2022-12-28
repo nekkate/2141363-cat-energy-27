@@ -3,6 +3,8 @@
 }
 
 .main-footer__wrapper {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,36 +19,148 @@
     justify-content: space-between;
     padding: 57px 0;
   }
-
-  @media (min-width: $vp-768) {
-    padding: 67px 70px;
-  }
 }
 
 .main-footer__logo {
-  margin: 0 0 52px 0;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 32px 0;
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+    padding: 0;
+    width: auto;
+
+    border: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: $color-gainsboro;
+
+    @media (min-width: $vp-768) {
+      display: none;
+    }
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
-.main-footer__logo-html {
-  line-height: 19px;
-  font-family: $ff-lato;
-  margin: 0;
-}
+
 
 .main-footer__list {
-  list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  margin: 0;
+  padding: 20px 0 21px 0;
+
+  list-style-type: none;
   column-gap: 26px;
-  padding: 0;
-  margin: 0 0 43px 0;
+
+  grid-template-columns: repeat(3, 1fr);
+
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.main-footer__link {
+  &:hover {
+    color: #68b738;
+  }
+
+  &:active {
+    color: #68b738;
+
+    opacity: 0.3;
+  }
 }
 
 .main-footer__logo-html {
+  position: relative;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 22px 0 0 0;
+
+  font-size: 16px;
+  line-height: 19px;
+  font-family: $ff-lato;
+  color: $color-charcoal;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: $color-gainsboro;
+
+    @media (min-width: $vp-768) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 0;
+    width: auto;
+  }
+}
+
+.main-footer__logo-img-html-link {
+  &:hover {
+    color: #68b738;
+  }
+
+  &:active {
+    color: #68b738;
+
+    opacity: 0.3;
+  }
 }
 
 .main-footer__link {
   color: $color-dim-gray;
+}
+
+.main-footer__logo-html-link {
+  margin: 0 23px 0 0;
+
+  font-family: $ff-lato;
+
+
+
+  @media (min-width: $vp-768) {
+    margin: 0 23px 0 0;
+  }
+
+
+  &:active {
+    opacity: 0.3;
+  }
 }

@@ -1,5 +1,5 @@
 .additionally {
-  margin: 0 0 54px 0;
+  margin: 0 0 35px 0;
 
   @media (min-width: $vp-768) {
     margin: 0 0 69px 0;
@@ -9,62 +9,127 @@
     margin: 0;
 
     grid-column: 1/2;
-
   }
 }
 
 .additionally__list {
+  display: grid;
   margin: 0;
   padding: 0;
 
   list-style-type: none;
 
+  border-bottom: 1px solid $color-silver;
+
+  @media (min-width: $vp-768) {
+    position: relative;
+
+    margin: 0 0 69px 0;
+    padding: 0;
+
+    border: none;
+  }
+
   @media (min-width: $vp-1024) {
-    display: grid;
-    row-gap: 42px;
+    margin: 0;
+
+    border-right: none;
+    border-left: none;
   }
 }
 
 
 .additionally__title {
+  margin: 0 0 13px 0;
+
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    margin: 0 10px 0 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
 }
 
+
 .additionally__list-item {
+  position: relative;
+
+  padding: 13px 0 19px 0;
+
+  border-top: 1px solid $color-silver;
+
+
+
   @media (min-width: $vp-768) {
     display: grid;
+    padding: 26px 38px 28px 38px;
+
+    border: 1px solid $color-silver;
+    border-bottom: none;
+
+    row-gap: 22px;
   }
 
   @media (min-width: $vp-1024) {
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    align-items: center;
+    padding: 15px 0 17px 0;
+
+    border: none;
+    border-top: 1px solid $color-silver;
+
+    row-gap: 0;
+    grid-template-columns: 35% 34% 27%;
     justify-content: space-between;
   }
 }
 
+.additionally__list-item:last-child {
+  @media (min-width: $vp-768) {
+    border-bottom: 1px solid $color-silver;
+  }
+}
+
+
+
 .additionally__item {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   @media (min-width: $vp-768) {
     justify-content: flex-end;
   }
+
+  @media (min-width: $vp-1024) {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
 }
 
-additionally__item-definition {
-  white-space: nowrap;
+.additionally__item-definition {
+  align-self: flex-start;
 }
 
 .additionally__description {
+  margin: 0 0 15px 0;
+
   font-size: 14px;
   line-height: 14px;
   font-family: $ff-lato;
 
   @media (min-width: $vp-768) {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 20px;
+
     grid-column: 2;
-    grid-row: 1;
   }
 
   @media (min-width: $vp-1024) {
@@ -89,6 +154,9 @@ additionally__item-definition {
 
   @media (min-width: $vp-1024) {
     padding: 7px 26px;
-    width: 244px;
+
+    grid-column: 3;
+    grid-row: 1;
+    min-height: 40px;
   }
 }

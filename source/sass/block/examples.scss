@@ -31,10 +31,13 @@
 }
 
 .example__wrapper-list {
+  margin: 0 0 20px 0;
+
   @media (min-width: $vp-768) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 
     row-gap: 54px;
   }
@@ -49,9 +52,9 @@
 .example__list {
   display: grid;
   justify-content: center;
+  align-items: flex-start;
   margin: 0 0 20px 0;
   padding: 0;
-  align-items: flex-start;
 
   list-style-type: none;
   column-gap: 32px;
@@ -119,21 +122,19 @@
 .example__item-title {
   width: 100%;
   margin: 0;
-  padding: 14px 0 18px 0;
-  text-align: center;
+  padding: 14px 5px 18px 5px;
 
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
 
   border: 1px solid $color-very-light-grey;
   border-radius: 3px;
 
 
-
-
   @media (min-width: $vp-768) {
-    margin-bottom: 11px;
+    padding: 15px 5px 20px 5px;
 
     font-size: 30px;
     line-height: 37px;
@@ -142,19 +143,28 @@
 
 .example__item-description {
   position: relative;
-  background-color: $color-whisper;
 
   margin: -9px 0 0 0;
   padding: 0 10px;
-  text-align: center;
 
   font-size: 12px;
   line-height: 12px;
   font-family: $ff-lato;
+  text-align: center;
+
+  background-color: $color-whisper;
 
   @media (min-width: $vp-768) {
+    margin: -7px 0 0 0;
+
     font-size: 14px;
     line-height: 14px;
+
+    background-color: $color-white;
+  }
+
+  @media (min-width: $vp-1024) {
+    background-color: $color-whisper;
   }
 }
 
@@ -175,21 +185,28 @@
   text-transform: uppercase;
 
   @media (min-width: $vp-768) {
+    display: flex;
+    flex-wrap: wrap;
     width: 174px;
 
     font-size: 20px;
     text-align: right;
+
+    row-gap: 9px;
   }
 
   @media (min-width: $vp-1024) {
     width: 100%;
 
     text-align: left;
+    column-gap: 63px;
   }
 }
 
 
 .example__wrapper-slider {
+  position: relative;
+
   display: flex;
   justify-content: center;
 
@@ -217,5 +234,29 @@
 
   @media (min-width: $vp-1024) {
     margin: -175px 0 0 0;
+  }
+}
+
+.example__list-cat-slider-button {
+  position: absolute;
+
+  height: 100%;
+  padding: 0;
+
+  color: #666666;
+
+  background-color: inherit;
+  border: none;
+
+  &:hover {
+    color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $vp-768) {
+    display: none;
   }
 }
