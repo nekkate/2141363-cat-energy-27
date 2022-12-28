@@ -202,6 +202,10 @@
 
   border: none;
 
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $vp-768) {
     margin: 0 25px 0 0;
 
@@ -217,7 +221,7 @@
   position: absolute;
 
   width: 24px;
-  height: 20px;
+  height: 24px;
   overflow: hidden;
 
   background-image: url("/img/index/program-arrow-hover-and-active.png");
@@ -226,10 +230,15 @@
 
   &:hover {
     width: 32px;
+
     background-position: center;
   }
 
   &:active {
     opacity: 0.6;
+  }
+
+  @media (min-width: $vp-768) {
+    height: 30px;
   }
 }
