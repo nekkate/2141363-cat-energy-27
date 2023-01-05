@@ -5,6 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="preload"
+      href="fonts/oswaldregular.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="imп/favicon/apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link
+      rel="preload"
+      href="fonts/oswaldregular.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <title>Интернет-магазин функционального питания для котиков.</title>
   </head>
   <body>
@@ -12,13 +28,26 @@
       <div class="container">
         <div class="main-header__wrapper">
           <a class="main-header__logo">
-            <img
-              src="../img/logo-mobile.svg"
-              width="33"
-              height="33"
-              alt="Логотип Кэт Энерджи."
-            />
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcset="../img/svg/logo-desktop.svg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="../img/svg/logo-tablet.svg"
+              />
+              <img
+                class="main-header__logo-img"
+                src="../img/svg/logo-mobile.svg"
+                width="33"
+                height="33"
+                alt="Логотип Кэт Энерджи."
+              />
+            </picture>
+
             <svg
+              class="main-header__logo-svg"
               width="101"
               height="19"
               viewBox="0 0 101 19"
@@ -208,15 +237,52 @@
                     required
                     name="email"
                     value="kuklachev@gmail.com"
-                />
-                <svg class="form__input-list-item-icon" width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <line x1="0.65" y1="6" x2="0.65" y2="14" stroke="currentColor" stroke-width="1.3"/>
-                  <line x1="17.65" y1="6" x2="17.65" y2="14" stroke="currentColor" stroke-width="1.3"/>
-                  <line y1="13.35" x2="18" y2="13.35" stroke="currentColor" stroke-width="1.3"/>
-                  <line y1="1.35" x2="18" y2="1.35" stroke="currentColor" stroke-width="1.3"/>
-                  <path d="M17.35 3.1821L9.00002 9.67654L0.65 3.18209V1.65H3.5L9.00002 1.65H14H17.35V3.1821Z" stroke="currentColor" stroke-width="1.3"/>
+                  />
+                  <svg
+                    class="form__input-list-item-icon"
+                    width="19"
+                    height="14"
+                    viewBox="0 0 19 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="0.65"
+                      y1="6"
+                      x2="0.65"
+                      y2="14"
+                      stroke="currentColor"
+                      stroke-width="1.3"
+                    />
+                    <line
+                      x1="17.65"
+                      y1="6"
+                      x2="17.65"
+                      y2="14"
+                      stroke="currentColor"
+                      stroke-width="1.3"
+                    />
+                    <line
+                      y1="13.35"
+                      x2="18"
+                      y2="13.35"
+                      stroke="currentColor"
+                      stroke-width="1.3"
+                    />
+                    <line
+                      y1="1.35"
+                      x2="18"
+                      y2="1.35"
+                      stroke="currentColor"
+                      stroke-width="1.3"
+                    />
+                    <path
+                      d="M17.35 3.1821L9.00002 9.67654L0.65 3.18209V1.65H3.5L9.00002 1.65H14H17.35V3.1821Z"
+                      stroke="currentColor"
+                      stroke-width="1.3"
+                    />
                   </svg>
-              </label>
+                </label>
                 <label class="form__input-list-item"
                   ><p
                     class="form__input-list-text form__input-list-text--phone"
@@ -229,13 +295,23 @@
                     required
                     name="phone"
                     value="8 (960) 900-60-90"
-                />
-                <svg class="form__input-list-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7 8H15.5M15.5 8L13 5.5M15.5 8L13 10.5M5.5 0.5V5.5H2.5V10.5H5.5V15.5H3C1.5 15.5 0.5 14.5 0.5 13V3C0.5 1.5 1.5 0.5 3 0.5H5.5Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                  />
+                  <svg
+                    class="form__input-list-item-icon"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 8H15.5M15.5 8L13 5.5M15.5 8L13 10.5M5.5 0.5V5.5H2.5V10.5H5.5V15.5H3C1.5 15.5 0.5 14.5 0.5 13V3C0.5 1.5 1.5 0.5 3 0.5H5.5Z"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
                   </svg>
-
-
-              </label>
+                </label>
               </div>
             </fieldset>
           </div>
@@ -336,13 +412,16 @@
           </div>
         </div>
         <div class="contacts__map">
-          <img
+          <h2 class="visually-hidden">Как до нас добраться.</h2>
+          <iframe
             class="contacts__img"
-            src="./img/location.png"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
             width="320"
             height="362"
-            alt="Карта расположения магазина Cat Energy."
-          />
+            allowfullscreen
+            title="Карта расположения магазина Cat
+        Energy."
+          ></iframe>
         </div>
       </section>
     </main>
@@ -351,7 +430,8 @@
         <div class="main-footer__wrapper">
           <a class="main-footer__logo" href="#">
             <img
-              src="./img/cat-energy-logo.svg"
+              class="main-footer__logo-img"
+              src="./img/svg/logo-cat-mobile.svg"
               width="128"
               height="24"
               alt="Логотип Cat Energy."

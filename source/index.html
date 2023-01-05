@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="imп/favicon/apple.png">
+<link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <title>Интернет-магазин функционального питания для котиков.</title>
   </head>
   <body>
@@ -13,13 +18,26 @@
         <div class="container">
           <div class="main-header__wrapper">
             <a class="main-header__logo">
-              <img
-                src="../img/logo-mobile.svg"
-                width="33"
-                height="33"
-                alt="Логотип Кэт Энерджи."
-              />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="../img/svg/logo-desktop.svg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="../img/svg/logo-tablet.svg"
+                />
+                <img
+                  class="main-header__logo-img"
+                  src="../img/svg/logo-mobile.svg"
+                  width="33"
+                  height="33"
+                  alt="Логотип Кэт Энерджи."
+                />
+              </picture>
+
               <svg
+                class="main-header__logo-svg"
                 width="101"
                 height="19"
                 viewBox="0 0 101 19"
@@ -93,7 +111,6 @@
                     href="catalog.html"
                     >Каталог продукции</a
                   >
-
                 </li>
                 <li class="main-header__nav-item">
                   <a
@@ -118,13 +135,30 @@
               </a>
             </div>
             <div class="intro__container-img">
-              <img
-                class="intro__img"
-                src="./img/index/intro-bank.png"
-                alt="Банка корма в приветственном блоке."
-                width="280"
-                height="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="
+                    ./img/content/index/intro-bank-desktop.png    1x,
+                    ./img/content/index/intro-bank-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/content/index/intro-bank-tablet.png    1x,
+                    ./img/content/index/intro-bank-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="intro__img"
+                  src="./img/content/index/intro-bank-mobile.png"
+                  srcset="./img/content/index/intro-bank-mobile@2x.png 2x"
+                  alt="Банка корма в приветственном блоке."
+                  width="280"
+                  height="270"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -235,28 +269,74 @@
                 </div>
               </div>
               <div class="example__wrapper-slider">
-                <img
-                  class="example__list-cat-slider-img"
-                  src="./img/index/slider-cat.png"
-                  width="280"
-                  height="256"
-                  alt="Лысый котик сфинкс как до."
-                />
-                  <button
-                    class="example__list-cat-slider-button"
-                    type="button"
-                    min="0"
-                    max="10"
-                    value="50"
-                  ><svg class="example__list-cat-slider-button-img" width="40" height="256" viewBox="0 0 40 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="18" width="4" height="256" rx="2" fill="currentColor"/>
-                    <rect x="1" y="109" width="38" height="38" rx="19" fill="white"/>
-                    <path d="M16 119L8 128L16 137V119Z" fill="currentColor"/>
-                    <path d="M32 128L24 119V137L32 128Z" fill="currentColor"/>
-                    <rect x="1" y="109" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2"/>
-                    </svg></button>
+                <picture>
+                  <source
+                    media="(min-width: 1024px)"
+                    srcset="
+                      ./img/content/index/slider-cat-desktop.png    1x,
+                      ./img/content/index/slider-cat-desktop@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/content/index/slider-cat-tablet.png    1x,
+                      ./img/content/index/slider-cat-tablet@2x.png 2x
+                    "
+                  />
+                  <img
+                    class="example__list-cat-slider-img"
+                    src="./img/content/index/slider-cat-mobile.png"
+                    srcset="./img/content/index/slider-cat-mobile@2x.png 2x"
+                    width="280"
+                    height="256"
+                    alt="Лысый котик сфинкс как до."
+                  />
+                </picture>
 
-
+                <button
+                  class="example__list-cat-slider-button"
+                  type="button"
+                  min="0"
+                  max="10"
+                  value="50"
+                >
+                  <svg
+                    class="example__list-cat-slider-button-img"
+                    width="40"
+                    height="256"
+                    viewBox="0 0 40 256"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="18"
+                      width="4"
+                      height="256"
+                      rx="2"
+                      fill="currentColor"
+                    />
+                    <rect
+                      x="1"
+                      y="109"
+                      width="38"
+                      height="38"
+                      rx="19"
+                      fill="white"
+                    />
+                    <path d="M16 119L8 128L16 137V119Z" fill="currentColor" />
+                    <path d="M32 128L24 119V137L32 128Z" fill="currentColor" />
+                    <rect
+                      x="1"
+                      y="109"
+                      width="38"
+                      height="38"
+                      rx="19"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -293,8 +373,8 @@
         <div class="main-footer__wrapper">
           <a class="main-footer__logo" href="#">
             <img
-            class="main-footer__logo-img"
-              src="./img/cat-energy-logo.svg"
+              class="main-footer__logo-img"
+              src="./img/svg/logo-cat-mobile.svg"
               width="128"
               height="24"
               alt="Логотип Cat Energy."
