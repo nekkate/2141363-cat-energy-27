@@ -3,11 +3,14 @@
   padding: 0;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 90px;
+    margin-bottom: 36px;
+    padding: 0 0 43px 0;
+    border-bottom: 2px solid $color-whisper;
   }
 
   @media (min-width: $vp-1024) {
-    margin-bottom: 69px;
+    margin-bottom: 32px;
+    border: none;
   }
 }
 
@@ -20,10 +23,15 @@
   line-height: 40px;
 
   @media (min-width: $vp-768) {
-    margin: 0 0 32px 0;
+    margin: 0 0 41px 0;
 
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin: 0 0 23px 0;
+
   }
 }
 
@@ -39,7 +47,7 @@
   @media (min-width: $vp-768) {
     padding: 0 75px 0 0;
 
-    column-gap: 153px;
+    column-gap: 141px;
 
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 280px);
@@ -78,25 +86,25 @@
   }
 
   &--step1::before {
-    background-image: url("/img/content/index/step-1.svg");
+    background-image: url("/img/icons/step-1.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--step2::before {
-    background-image: url("/img/content/index/step-2.svg");
+    background-image: url("/img/icons/step-2.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--step3::before {
-    background-image: url("/img/content/index/step-3.svg");
+    background-image: url("/img/icons/step-3.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--step4::before {
-    background-image: url("/img/content/index/step-4.svg");
+    background-image: url("/img/icons/step-4.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -105,11 +113,18 @@
     display: flex;
     flex-wrap: wrap;
 
+    &::before {
+      content: "";
+
+      width: 80px;
+      height: 80px;
+    }
+
     &--step1::after {
       content: "1";
       position: absolute;
       top: 0;
-      right: 0;
+      right: 20px;
       z-index: -1;
 
       font-size: 280px;
@@ -158,8 +173,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 31px;
+    row-gap: 27px;
     align-items: baseline;
+
+    &--step1::after  {
+      right: 20px;
+    }
   }
 }
 
@@ -175,5 +194,6 @@
   @media (min-width: $vp-768) {
     font-size: 16px;
     line-height: 24px;
+
   }
 }

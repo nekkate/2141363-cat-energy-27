@@ -45,15 +45,15 @@
   border-bottom: 1px solid $color-whisper-2;
 
   @media (min-width: $vp-768) {
-    margin: 0 0 68px 0;
+    margin: 0 0 111px 0;
 
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 76px;
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $vp-1024) {
-    align-items: flex-end;
-    margin: 0 0 75px 0;
+    margin: 0 0 74px 0;
 
     column-gap: 80px;
 
@@ -61,6 +61,7 @@
 
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: none;
+    row-gap: 65px;
   }
 }
 
@@ -73,7 +74,7 @@
 
   border-top: 1px solid $color-whisper-2;
 
-  row-gap: 13px;
+  row-gap: 14px;
 
 
 
@@ -87,19 +88,23 @@
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 73px, rgba(242, 242, 242, 1) 73px);
     border: none;
 
-    row-gap: 33px;
+    row-gap: 43px;
   }
 
   @media (min-width: $vp-1024) {
-    padding: 0 12% 8% 14%;
-
+    padding: 0 12% 16% 14%;
+    row-gap: 33px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 80px, rgba(242, 242, 242, 1) 80px);
   }
 }
 
 .catalog__product--all {
+
+  padding: 77px 20px 0 20px;
+  margin: 0 -20px 0 -20px;
+  row-gap: 20px;
+
   @media (min-width: $vp-768) {
-    justify-content: center;
     justify-content: flex-end;
     align-items: center;
     height: calc(100% - 78px);
@@ -137,8 +142,8 @@
 
   @media (min-width: $vp-1024) {
     justify-content: end;
-    margin: 0;
-    padding: 161px 40px 38px 40px;
+    margin: 73px 0 0;
+    padding: 37px 37px 38px;
 
 
     &::before {
@@ -229,7 +234,7 @@
 .catalog__product-container {
   display: grid;
 
-  row-gap: 18px;
+  row-gap: 14px;
 
   @media (min-width: $vp-768) {
     width: 100%;
@@ -283,8 +288,6 @@
   font-size: 12px;
   line-height: 16px;
   font-family: $ff-lato;
-
-  row-gap: 2px;
 
 
   @media (min-width: $vp-768) {
@@ -362,7 +365,7 @@
 }
 
 .catalog__product-all-title {
-  margin: 0 0 8px 0;
+  margin: 0;
 
   font-weight: 400;
   font-size: 16px;
@@ -371,6 +374,8 @@
 
   @media (min-width: $vp-768) {
     margin: 0 0 23px 0;
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 
@@ -380,4 +385,9 @@
   font-size: 12px;
   line-height: 16px;
   font-family: $ff-lato;
+
+  @media (min-width: $vp-768) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }

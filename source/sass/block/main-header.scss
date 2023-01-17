@@ -5,12 +5,12 @@
 
 
   @media (min-width: $vp-768) {
-    padding: 24px 0 64px 0;
+    padding: 0 0 59px 0;
   }
 
   @media (min-width: $vp-1024) {
     margin: 0;
-    padding: 53px 0 74px 0;
+    padding: 53px 0 69px 0;
   }
 }
 
@@ -72,8 +72,8 @@ width: auto;
 }
 
 .main-header__logo-img {
-  height: 36px;
-  width: 33px;
+  height: 38px;
+  width: 191px;
 
   @media (min-width: $vp-768) {
     height: 52px;
@@ -91,6 +91,7 @@ width: auto;
 
   @media (min-width: $vp-768) {
     position: relative;
+    padding: 18px 0 0 0;
 
     display: flex;
     justify-content: flex-end;
@@ -98,6 +99,8 @@ width: auto;
 
   @media (min-width: $vp-1024) {
     width: 49%;
+
+    padding-top: 13px;
   }
 
   .is-open & {
@@ -253,7 +256,7 @@ width: auto;
   @media (min-width: $vp-768) {
     position: relative;
 
-    margin: 0 30px 15px 0;
+    margin: 0 24px 15px 0;
     padding: 0;
 
     border: none;
@@ -262,8 +265,8 @@ width: auto;
       margin: 0 0 15px 0;
     }
 
-    @media (min-width: $vp-768) {
-      margin: 0 32px 15px 0;
+    @media (min-width: $vp-1024) {
+      margin: 0 25px 15px 0;
     }
   }
 

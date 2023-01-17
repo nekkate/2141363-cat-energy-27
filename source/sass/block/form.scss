@@ -7,7 +7,7 @@
   border-top: 1px solid $color-whisper-2;
 
   @media (min-width: $vp-768) {
-    margin: 0 0 72px 0;
+    margin: 0 0 78px 0;
     padding: 0 40px;
 
     border: none;
@@ -51,19 +51,12 @@
   }
 }
 
-.form__subtitle-br {
-  display: none;
-
-  @media (min-width: $vp-768) {
-    display: block;
-  }
-}
 
 .form__main-wrapper {
   margin: 0 0 26px 0;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 75px;
+    margin-bottom: 73px;
   }
 
   @media (min-width: $vp-1024) {
@@ -81,7 +74,7 @@
   border: none;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 72px;
+    margin-bottom: 69px;
   }
 
   @media (min-width: $vp-1024) {
@@ -109,17 +102,18 @@
   }
 
   @media (min-width: $vp-768) {
-    border: none;
     margin: 0;
     padding: 0;
+
+    border: none;
   }
 }
 
 .form__input-list-item {
+  position: relative;
+
   display: flex;
   align-items: center;
-
-  position: relative;
 
   line-height: 18px;
   color: $color-charcoal;
@@ -135,15 +129,13 @@
 .form__input-list-item-icon {
   position: absolute;
   right: 18px;
-
-
 }
 
-.form__input-list-input:focus + .form__input-list-item-icon{
-  color: #68B738;
+.form__input-list-input:focus + .form__input-list-item-icon {
+  color: #68b738;
 }
 
-.form__input-list-input--error + .form__input-list-item-icon{
+.form__input-list-input--error + .form__input-list-item-icon {
   color: $color-light-coral;
 }
 
@@ -151,28 +143,37 @@
 
 .form__input-list-text {
   margin: 0;
+
+  &--year {
+    min-width: 100px;
+  }
+
+  &--weight {
+    min-width: 60px;
+  }
 }
 
 .form__input-list-input {
-  width: auto;
   flex-grow: 1;
+  width: auto;
   margin: 0;
   padding: 14px 50px 13px 20px;
 
+  font-size: 16px;
   line-height: 18px;
   font-family: inherit;
   color: $color-charcoal;
   text-transform: uppercase;
-  border: none;
 
+  border: none;
   outline: 1px solid $color-whisper-1;
 
   &--comment {
+    width: 100%;
     padding: 10px 12px 10px 15px;
 
     font-size: 16px;
     line-height: 18px;
-    width: 100%;
   }
 
   @media (min-width: $vp-768) {
@@ -189,9 +190,8 @@
   }
 
   &--error {
-
     &:active {
-    outline: 2px solid $color-light-coral;
+      outline: 2px solid $color-light-coral;
     }
   }
 }
@@ -201,9 +201,11 @@
 
   border: none;
 
-  @media (min-width: $vp-768) {}
+  @media (min-width: $vp-768) {
+  }
 
-  @media (min-width: $vp-1024) {}
+  @media (min-width: $vp-1024) {
+  }
 }
 
 .form__radio-list {
@@ -217,8 +219,8 @@
   gap: 13px;
 
   @media (min-width: $vp-768) {
-    padding: 25px 0 25px 28px;
     margin: 0;
+    padding: 25px 0 25px 28px;
 
     border: none;
     border: 1px solid $color-whisper-1;
@@ -254,7 +256,7 @@
 
 
 
-.form__radio-list-input[type="radio"]:checked+.form__radio-list-input-mark::before {
+.form__radio-list-input[type="radio"]:checked + .form__radio-list-input-mark::before {
   content: "";
   position: absolute;
   top: 25%;
@@ -273,12 +275,11 @@
 }
 
 .form__radio-list-input:focus-visible + .form__radio-list-input-mark {
-outline: 1px solid $color-silver;
+  outline: 1px solid $color-silver;
 }
 
 
 .form__radio-list-input-mark {
-
   position: absolute;
   left: 0;
 
@@ -309,7 +310,7 @@ outline: 1px solid $color-silver;
   &::before {
     content: "";
     position: absolute;
-    top: 18px;
+    top: 12px;
     left: 50px;
     z-index: -1;
 
@@ -327,7 +328,7 @@ outline: 1px solid $color-silver;
       content: "";
       position: absolute;
       top: 18px;
-      left: 0px;
+      left: 0;
       z-index: -1;
 
       width: calc(100%);
@@ -347,7 +348,7 @@ outline: 1px solid $color-silver;
   &::before {
     content: "";
     position: absolute;
-    top: 18px;
+    top: 12px;
     left: 50px;
     z-index: -1;
 
@@ -385,7 +386,7 @@ outline: 1px solid $color-silver;
   &::before {
     content: "";
     position: absolute;
-    top: 18px;
+    top: 12px;
     left: 50px;
     z-index: -1;
 
@@ -418,7 +419,7 @@ outline: 1px solid $color-silver;
 .form__contacts {
   position: relative;
 
-  margin: 0 0 24px 0;
+  margin: 0;
   padding: 0;
 
   border: none;
@@ -432,7 +433,7 @@ outline: 1px solid $color-silver;
 
 .form__legend {
   display: inline-flex;
-  margin: 0 0 35px 0;
+  margin: 0 0 34px 0;
 
   font-size: 24px;
   line-height: 26px;
@@ -454,7 +455,7 @@ outline: 1px solid $color-silver;
   }
 
   @media (min-width: $vp-768) {
-    margin: 0 -40px 76px -40px;
+    margin: 0 -40px 73px -40px;
     padding: 0 40px;
 
     font-size: 36px;
@@ -465,8 +466,6 @@ outline: 1px solid $color-silver;
       padding: 0 40px;
     }
   }
-
-
 }
 
 .form__legend-br {
@@ -482,7 +481,7 @@ outline: 1px solid $color-silver;
   border: none;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 65px;
+    margin-bottom:7px;
   }
 }
 
@@ -497,10 +496,13 @@ outline: 1px solid $color-silver;
   display: flex;
   flex-direction: column;
 
-  gap: 13px;
+  column-gap: 59px;
+
+  row-gap: 13px;
 
   @media (min-width: $vp-768) {
     display: grid;
+    row-gap: 31px;
 
     grid-template-columns: repeat(2, 1fr);
   }
@@ -519,20 +521,20 @@ outline: 1px solid $color-silver;
   padding-left: 46px;
 
   @media (min-width: $vp-768) {
-    font-size: 20px;
-    line-height: 30px;
-
     min-height: 40px;
     padding-left: 60px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 
   &:disabled {
-opacity: 0.3;
+    opacity: 0.3;
   }
 }
 
-.form__checkbox-list-input[type="checkbox"]:checked+.form__checkbox-mark {
-  background-image: url("/img/content/form/mark-square.svg");
+.form__checkbox-list-input[type="checkbox"]:checked + .form__checkbox-mark {
+  background-image: url("/img/icons/mark-square.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -558,16 +560,16 @@ opacity: 0.3;
 
 .form__button-wrapper {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   margin: 0 0 32px 0;
 
   @media (min-width: $vp-768) {
     display: grid;
+    margin: 0;
 
     gap: 64px;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0;
   }
 }
 
@@ -583,8 +585,9 @@ opacity: 0.3;
   text-transform: uppercase;
 
   @media (min-width: $vp-768) {
-    margin: 0;
     min-height: 52px;
+    margin: 0;
+
     font-size: 20px;
   }
 }
