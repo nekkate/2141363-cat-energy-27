@@ -48,9 +48,10 @@
 
     column-gap: 60px;
 
+    border-bottom: none;
+
     grid-template-columns: repeat(2, 1fr);
     row-gap: 62px;
-    border-bottom: none;
   }
 
   @media (min-width: $vp-1024) {
@@ -84,7 +85,7 @@
     margin: 0;
     padding: 0 12% 12% 12%;
 
-    background: linear-gradient(180deg,#fff 83px,#f2f2f2 0);
+    background: linear-gradient(180deg, #ffffff 83px, #f2f2f2 0);
     border: none;
 
     row-gap: 43px;
@@ -100,7 +101,6 @@
 }
 
 .catalog__product-picture-wrapper {
-
   @media (min-width: $vp-768) {
     display: flex;
     justify-content: flex-end;
@@ -108,7 +108,6 @@
 }
 
 .catalog__product--last {
-
   @media (min-width: $vp-768) {
     min-height: 512px;
   }
@@ -199,7 +198,8 @@
       content: "";
       position: absolute;
       top: 81px;
-left: 38%;
+      left: 38%;
+
       width: 60px;
       height: 0;
 
@@ -285,7 +285,6 @@ left: 38%;
   }
 
   @media (min-width: $vp-1024) {
-
     row-gap: 22px;
   }
 }
