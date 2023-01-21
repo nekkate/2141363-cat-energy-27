@@ -75,14 +75,14 @@
     display: grid;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0 17px 0;
+    padding: 14px 0 17px 0;
 
     column-gap: 5px;
 
     border: none;
     border-top: 1px solid $color-silver;
 
-    grid-template-columns: 37% 35% 26%;
+    grid-template-columns: 32% 31% 27%;
     row-gap: 0;
   }
 }
@@ -106,13 +106,19 @@
 
   @media (min-width: $vp-1024) {
     display: grid;
+    column-gap: 5px;
 
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 60% 39%;
   }
 }
 
 .additionally__item-definition {
   align-self: flex-start;
+
+  @media (min-width: $vp-1024) {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .additionally__description {

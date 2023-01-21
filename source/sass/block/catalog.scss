@@ -44,12 +44,13 @@
   border-bottom: 1px solid $color-whisper-2;
 
   @media (min-width: $vp-768) {
-    margin: 0 0 111px 0;
+    margin: 0 0 65px 0;
 
     column-gap: 60px;
 
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 76px;
+    row-gap: 62px;
+    border-bottom: none;
   }
 
   @media (min-width: $vp-1024) {
@@ -81,20 +82,35 @@
     flex-direction: column;
     justify-content: flex-end;
     margin: 0;
-    padding: 0 11% 8% 11%;
+    padding: 0 12% 12% 12%;
 
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 73px, rgba(242, 242, 242, 1) 73px);
+    background: linear-gradient(180deg,#fff 83px,#f2f2f2 0);
     border: none;
 
     row-gap: 43px;
   }
 
   @media (min-width: $vp-1024) {
-    padding: 0 12% 16% 14%;
+    padding: 0 15% 16% 16%;
 
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 80px, rgba(242, 242, 242, 1) 80px);
 
     row-gap: 33px;
+  }
+}
+
+.catalog__product-picture-wrapper {
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.catalog__product--last {
+
+  @media (min-width: $vp-768) {
+    min-height: 512px;
   }
 }
 
@@ -131,14 +147,14 @@
   @media (min-width: $vp-768) {
     justify-content: flex-end;
     align-items: center;
-    height: calc(100% - 78px);
-    margin: 73px 0 0 0;
-    padding: 71px 37px 0 38px;
+    height: calc(100% - 83px);
+    margin: 82px 0 0 0;
+    padding: 20px 37px 40px 37px;
 
     background: $color-white;
     border: 2px solid $color-white-smoke;
 
-    row-gap: 20%;
+    row-gap: 22%;
 
     &::before {
       top: 53px;
@@ -166,7 +182,7 @@
   @media (min-width: $vp-1024) {
     justify-content: end;
     margin: 73px 0 0;
-    padding: 37px 37px 38px;
+    padding: 37px 37px 30px 37px;
 
     &::before {
       content: "";
@@ -183,7 +199,7 @@
       content: "";
       position: absolute;
       top: 81px;
-
+left: 38%;
       width: 60px;
       height: 0;
 
@@ -269,7 +285,6 @@
   }
 
   @media (min-width: $vp-1024) {
-    max-width: 169px;
 
     row-gap: 22px;
   }
@@ -389,7 +404,7 @@
   text-transform: uppercase;
 
   @media (min-width: $vp-768) {
-    margin: 0 0 23px 0;
+    margin: 0 0 18px 0;
 
     font-size: 20px;
     line-height: 22px;
