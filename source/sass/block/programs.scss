@@ -1,12 +1,12 @@
 .programs {
-  margin: 0 0 20px 0;
+  margin: 0 0 18px 0;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $vp-1024) {
-    margin-bottom: 71px;
+    margin-bottom: 78px;
   }
 }
 
@@ -21,7 +21,7 @@
   gap: 20px;
 
   @media (min-width: $vp-768) {
-    gap: 30px;
+    gap: 25px;
   }
 
   @media (min-width: $vp-1024) {
@@ -36,15 +36,17 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 21px 33px 18px 19px;
+  padding: 30px 27px 18px 20px;
+
+  background-color: $color-white-smoke;
 
   @media (min-width: $vp-768) {
     display: grid;
-    padding: 77px 62px 53px 52px;
+    padding: 77px 62px 61px 52px;
 
     column-gap: 54px;
 
-    background-color: #f2f2f2;
+    background-color: $color-white-smoke;
 
     grid-template-columns: 2fr 1fr;
   }
@@ -53,8 +55,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 41px 62px 53px 52px;
   }
-
 
   &::before {
     content: "";
@@ -70,16 +72,19 @@
   }
 
   &--weightloss::before {
-    content: url("/img/content/index/weightloss-icon-mobile.svg");
+    content: url("/img/icons/weightloss-icon-mobile.svg");
     position: absolute;
+    top: 24px;
+    left: 24px;
 
     width: 50px;
     height: 50px;
 
-
     @media (min-width: $vp-768) {
-      content: url("/img/content/index/weightloss-icon-tablet.svg");
+      content: url("/img/icons/weightloss-icon-tablet.svg");
       position: relative;
+      top: 10px;
+      left: 0;
 
       width: 200px;
       height: 200px;
@@ -89,8 +94,10 @@
     }
 
     @media (min-width: $vp-1024) {
-      content: url("/img/content/index/weightloss-icon-desktop.svg");
+      content: url("/img/icons/weightloss-icon-desktop.svg");
       position: absolute;
+      top: 47px;
+      left: 52px;
 
       width: 100px;
       height: 100px;
@@ -98,16 +105,19 @@
   }
 
   &--weightgain::before {
-    content: url("/img/content/index/weightgain-icon-mobile.svg");
+    content: url("/img/icons/weightgain-icon-mobile.svg");
     position: absolute;
+    top: 24px;
+    left: 24px;
 
     width: 50px;
     height: 50px;
 
     @media (min-width: $vp-768) {
-
-    content: url("/img/content/index/weightgain-icon-tablet.svg");
+      content: url("/img/icons/weightgain-icon-tablet.svg");
       position: relative;
+      top: 10px;
+      left: 0;
 
       width: 200px;
       height: 200px;
@@ -117,9 +127,10 @@
     }
 
     @media (min-width: $vp-1024) {
-
-    content: url("/img/content/index/weightgain-icon-desktop.svg");
+      content: url("/img/icons/weightgain-icon-desktop.svg");
       position: absolute;
+      top: 47px;
+      left: 52px;
 
       width: 100px;
       height: 100px;
@@ -143,7 +154,6 @@
 
     background-color: $color-gainsboro;
 
-
     @media (min-width: $vp-768) {
       display: none;
     }
@@ -152,8 +162,8 @@
 
 .programs__title {
   min-height: 50px;
-  margin: 0 0 22px 0;
-  padding: 0 0 0 91px;
+  margin: 0 0 18px 0;
+  padding: 0 0 0 72px;
 
   font-weight: 400;
   font-size: 24px;
@@ -161,7 +171,7 @@
   text-transform: uppercase;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 24px;
+    margin-bottom: 9px;
     padding: 0;
 
     font-size: 36px;
@@ -174,10 +184,6 @@
   }
 }
 
-.programs__item {
-  background-color: $color-white-smoke;
-}
-
 .programs__text {
   margin: 0 0 38px 0;
   padding: 0;
@@ -187,17 +193,21 @@
   font-family: $ff-lato;
 
   @media (min-width: $vp-768) {
+    margin: 0 0 54px 0;
+
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $vp-1024) {
+    margin: 0 0 30px 0;
+  }
 }
-
-
 
 .programs__button {
   position: relative;
 
-  margin: 0 15px 0 0;
+  padding: 0 40px 0 0;
 
   line-height: 16px;
   font-family: inherit;
@@ -208,43 +218,39 @@
 
   border: none;
 
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+
+    background-image: url("/img/icons/program-arrow-hover-and-active.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    transform-origin: left;
+
+    @media (min-width: $vp-768) {
+      height: 30px;
+    }
+  }
+
+  &:hover::before {
+    transform: scaleX(1.5);
+  }
+
   &:active {
     opacity: 0.6;
   }
 
   @media (min-width: $vp-768) {
-    margin: 0 25px 0 0;
+    padding: 0 50px 0 0;
 
     font-size: 20px;
     line-height: 30px;
 
     background-color: inherit;
-  }
-}
-
-
-.programs__button-icon {
-  position: absolute;
-
-  width: 24px;
-  height: 24px;
-  overflow: hidden;
-
-  background-image: url("/img/content/index/program-arrow-hover-and-active.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-
-  &:hover {
-    width: 32px;
-
-    background-position: center;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-
-  @media (min-width: $vp-768) {
-    height: 30px;
   }
 }

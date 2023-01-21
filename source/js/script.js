@@ -1,7 +1,5 @@
-let header = document.querySelector('.main-header');
-let navToggle = document.querySelector('.main-header__nav-toggle');
-
-/*navMain.classList.remove('no-js');*/
+const header = document.querySelector('.main-header');
+const navToggle = document.querySelector('.main-nav__toggle');
 
 header.classList.remove('no-js');
-navToggle.addEventListener('click', ()=>header.classList.toggle('is-open'));
+navToggle.addEventListener('click', () => header.classList.toggle('is-open'));

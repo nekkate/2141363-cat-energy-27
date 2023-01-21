@@ -1,5 +1,7 @@
 .button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   font-family: inherit;
   text-align: center;
@@ -7,33 +9,32 @@
   text-decoration: none;
 
   border: none;
-
-  &--green {
-    color: $color-white;
-
-    background-color: $color-apple;
-  }
 }
 
 .button--green {
+  color: $color-white;
+
+  background-color: $color-apple;
+
   &:hover {
-    background-color: #5EAA2F;
+    background-color: $color-limeade;
   }
 
   &:active {
     color: rgb(255, 255, 255, 0.3);
-    background-color: #5EAA2F;
+
+    background-color: $color-limeade;
   }
 }
 
 .button--grey {
   &:hover {
-    background-color: #EBEBEB;
+    background-color: $color-whisper-2;
   }
 
   &:active {
     color: rgb(68, 68, 68, 0.3);
-    background-color: #EBEBEB;
-  }
 
+    background-color: $color-whisper-2;
+  }
 }

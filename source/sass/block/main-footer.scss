@@ -9,8 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 39px 0 22px 0;
-
+  padding: 42px 0 22px 0;
 
   @media (min-width: $vp-768) {
     display: flex;
@@ -18,6 +17,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 57px 0;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding: 64px 0 75px 0;
   }
 }
 
@@ -28,12 +31,12 @@
   justify-content: center;
   width: 100%;
   margin: 0;
-  padding: 0 0 32px 0;
+  padding: 0 0 14px 0;
 
   @media (min-width: $vp-768) {
+    width: auto;
     margin: 0;
     padding: 0;
-    width: auto;
 
     border: none;
   }
@@ -63,32 +66,37 @@
   }
 }
 
-
-
 .main-footer__list {
   display: grid;
   margin: 0;
-  padding: 20px 0 21px 0;
+  padding: 20px 0 14px 0;
 
   list-style-type: none;
   column-gap: 26px;
 
   grid-template-columns: repeat(3, 1fr);
 
-
   @media (min-width: $vp-768) {
     margin: 0;
     padding: 0;
   }
+
+  @media (min-width: $vp-768) {
+    margin-left: 24px;
+
+    column-gap: 24px;
+  }
 }
 
 .main-footer__link {
+  color: $color-dim-gray;
+
   &:hover {
-    color: #68b738;
+    color: $color-apple;
   }
 
   &:active {
-    color: #68b738;
+    color: $color-apple;
 
     opacity: 0.3;
   }
@@ -98,7 +106,7 @@
   position: relative;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   margin: 0;
@@ -109,6 +117,20 @@
   font-family: $ff-lato;
   color: $color-charcoal;
   text-decoration: none;
+
+  &:hover {
+    .main-footer__logo-img-html-link {
+      color: $color-apple;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .main-footer__logo-img-html-link {
+      color: $color-apple;
+    }
+  }
 
   &::after {
     content: "";
@@ -127,25 +149,16 @@
   }
 
   @media (min-width: $vp-768) {
-    padding: 0;
     width: auto;
+    padding: 0;
   }
 }
 
-.main-footer__logo-img-html-link {
-  &:hover {
-    color: #68b738;
+.main-footer__logo-img {
+  @media (min-width: $vp-768) {
+    width: 143px;
+    height: 26px;
   }
-
-  &:active {
-    color: #68b738;
-
-    opacity: 0.3;
-  }
-}
-
-.main-footer__link {
-  color: $color-dim-gray;
 }
 
 .main-footer__logo-html-link {
@@ -153,14 +166,7 @@
 
   font-family: $ff-lato;
 
-
-
   @media (min-width: $vp-768) {
-    margin: 0 23px 0 0;
-  }
-
-
-  &:active {
-    opacity: 0.3;
+    margin: 0 27px 7px 0;
   }
 }
