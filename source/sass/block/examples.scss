@@ -2,7 +2,7 @@
   position: relative;
   z-index: 1;
 
-  padding: 25px 0 44px 0;
+  padding: 24px 0 39px 0;
   overflow: hidden;
 
   background-color: $color-whisper;
@@ -104,11 +104,12 @@
   padding: 0;
 
   font-size: 14px;
+  line-height: 18px;
   font-family: $ff-lato;
   color: $color-charcoal;
 
   @media (min-width: $vp-768) {
-    max-width: 700px;
+    max-width: 710px;
     margin-bottom: 54px;
 
     font-size: 16px;
