@@ -3,13 +3,13 @@
   padding: 0;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 36px;
-    padding: 0 0 43px 0;
+    margin: 0;
+    padding: 0 0 104px 0;
+
     border-bottom: 2px solid $color-whisper;
   }
 
   @media (min-width: $vp-1024) {
-    margin-bottom: 32px;
     border: none;
   }
 }
@@ -23,15 +23,14 @@
   line-height: 40px;
 
   @media (min-width: $vp-768) {
-    margin: 0 0 41px 0;
+    margin: 0 0 70px 0;
 
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $vp-1024) {
-    margin: 0 0 23px 0;
-
+    margin: 0 0 73px 0;
   }
 }
 
@@ -40,7 +39,7 @@
   margin: 0;
   padding: 0;
 
-  list-style-type: none;
+  list-style: none;
 
   row-gap: 20px;
 
@@ -50,8 +49,7 @@
     column-gap: 141px;
 
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 280px);
-    row-gap: 37px;
+    row-gap: 134px;
   }
 
   @media (min-width: $vp-1024) {
@@ -61,23 +59,22 @@
     column-gap: 77px;
 
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 280px);
   }
 }
 
 .work__item {
   position: relative;
 
-  display: grid;
+  display: flex;
   align-items: center;
-  margin: 0;
-
-  column-gap: 20px;
-
-  grid-template-columns: 60px auto;
+  min-height: 60px;
+  padding: 0 0 0 80px;
 
   &::before {
     content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
 
     width: 60px;
     height: 60px;
@@ -110,8 +107,7 @@
   }
 
   @media (min-width: $vp-768) {
-    display: flex;
-    flex-wrap: wrap;
+    padding: 111px 0 0 0;
 
     &::before {
       content: "";
@@ -120,68 +116,41 @@
       height: 80px;
     }
 
-    &--step1::after {
-      content: "1";
+    &::after {
       position: absolute;
-      top: 0;
-      right: 20px;
+      top: -37px;
+      right: 0;
       z-index: -1;
 
       font-size: 280px;
       line-height: 280px;
-      color: #f2f2f2;
+      color: $color-white-smoke;
+    }
+
+    &--step1::after {
+      content: "1";
+      right: 20px;
     }
 
     &--step2::after {
       content: "2";
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: -1;
-
-      font-size: 280px;
-      line-height: 280px;
-      color: #f2f2f2;
     }
 
     &--step3::after {
       content: "3";
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: -1;
-
-      font-size: 280px;
-      line-height: 280px;
-      color: #f2f2f2;
     }
 
     &--step4::after {
       content: "4";
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: -1;
-
-      font-size: 280px;
-      line-height: 280px;
-      color: #f2f2f2;
     }
   }
 
   @media (min-width: $vp-1024) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    row-gap: 27px;
-    align-items: baseline;
-
-    &--step1::after  {
+    &--step1::after {
       right: 20px;
     }
   }
 }
-
 
 .work__description {
   margin: 0;
@@ -194,6 +163,5 @@
   @media (min-width: $vp-768) {
     font-size: 16px;
     line-height: 24px;
-
   }
 }

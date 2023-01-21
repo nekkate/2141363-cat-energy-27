@@ -3,11 +3,9 @@
   padding: 0;
 
   @media (min-width: $vp-768) {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
-
-
 }
 
 .intro__wrapper {
@@ -21,24 +19,21 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0 0 0 83px;
     margin: -41px 0 0 0;
+    padding: 0 0 0 79px;
   }
 }
 
-
-
 .intro__container-intro {
-  padding: 27px 30px 125px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 0 -130px 0;
+  padding: 27px 30px 125px 30px;
 
   color: $color-white;
 
-  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../img/background/background-intro-mobile.jpg");
+  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background/background-intro-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -47,6 +42,7 @@
     padding: 0 150px 0 90px;
 
     color: $color-black;
+
     background: none;
   }
 
@@ -56,16 +52,14 @@
     margin: 0 0 53px 0;
     padding: 77px 0 131px 0;
   }
-
-
-  }
-
+}
 
 .intro__container-img {
   display: flex;
   flex-direction: column;
-  transform: translateY(-5px);
   align-items: center;
+
+  transform: translateY(-5px);
 
   @media (min-width: $vp-768) {
     position: relative;
@@ -73,13 +67,15 @@
 
     width: 100%;
     margin: 0;
+
     transform: translateY(51px);
   }
 
   @media (min-width: $vp-1024) {
-    min-width: 440px;
-    transform: translateX(-9px);
     align-items: flex-start;
+    min-width: 440px;
+
+    transform: translateX(-9px);
   }
 }
 
@@ -98,7 +94,6 @@
     margin: 0 0 0 -100px;
   }
 }
-
 
 .intro__title {
   margin: 0 0 25px 0;
@@ -146,19 +141,20 @@
 
   font-size: 14px;
   line-height: 18px;
+
   transform: translateY(302px);
 
   @media (min-width: $vp-768) {
     position: relative;
-    transform: none;
+
     align-self: flex-start;
-
-
     width: 244px;
+    min-height: 54px;
     padding: 14px 20px;
 
     font-size: 20px;
     line-height: 20px;
-    min-height: 54px;
+
+    transform: none;
   }
 }
