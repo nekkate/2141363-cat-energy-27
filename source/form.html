@@ -26,7 +26,8 @@
 
   <body>
     <header class="main-header no-js">
-      <a class="main-header__logo" href="#">
+      <!--Добавьте класс is-open, чтобы открыть меню по умолчанию.-->
+      <a class="main-header__logo" href="index.html">
         <picture>
           <source
             media="(min-width: 1024px)"
@@ -71,30 +72,33 @@
         <div class="container">
           <h1 class="form__title">Подбор программы</h1>
           <h2 class="form__subtitle">
-            Заполните анкету, и мы подберем <br>
+            Заполните анкету, и мы подберем <br />
             программу питания для вашего кота
           </h2>
           <div class="form__main-wrapper">
             <div class="form__info">
               <div class="form__input-list">
                 <label class="form__input-list-item">
-                  <p class="form__input-list-text form__input-list-text--name">
+                  <span
+                    class="form__input-list-text form__input-list-text--name"
+                  >
                     Имя:*
-                  </p>
+                  </span>
                   <input
                     class="form__input-list-input"
                     type="text"
                     required
                     name="name"
                     value="Барсик"
-                  />  <!--Добавьте модификатор form__input-list-input--error, чтобы показать ошибку при вводе -->
+                  />
+                  <!--Добавьте модификатор form__input-list-input--error, чтобы показать ошибку при вводе -->
                 </label>
                 <label class="form__input-list-item">
-                  <p
+                  <span
                     class="form__input-list-text form__input-list-text--weight"
                   >
                     Вес (кг):*
-                  </p>
+                  </span>
                   <input
                     class="form__input-list-input"
                     type="number"
@@ -104,9 +108,11 @@
                   />
                 </label>
                 <label class="form__input-list-item">
-                  <p class="form__input-list-text form__input-list-text--year">
+                  <span
+                    class="form__input-list-text form__input-list-text--year"
+                  >
                     Возраст (лет):*
-                  </p>
+                  </span>
                   <input
                     class="form__input-list-input form__input-list-input--year"
                     type="number"
@@ -163,8 +169,7 @@
           <div class="container">
             <fieldset class="form__contacts">
               <legend class="form__legend form__legend--contacts">
-                Контактные данные (владельца&nbsp;
-кота)
+                Контактные данные (владельца&nbsp; кота)
               </legend>
               <div class="form__input-list form__input-list--contacts">
                 <label class="form__input-list-item"
@@ -186,9 +191,11 @@
                   </svg>
                 </label>
                 <label class="form__input-list-item">
-                  <p class="form__input-list-text form__input-list-text--phone">
+                  <span
+                    class="form__input-list-text form__input-list-text--phone"
+                  >
                     Телефон:*
-                  </p>
+                  </span>
                   <input
                     class="form__input-list-input form__input-list-input--contacts"
                     type="text"
@@ -301,7 +308,10 @@
               к сотрудничеству дилеров!
             </h2>
             <p class="contacts__description">
-              ул. Большая Конюшенная, д. <br class="contacts__br-form">19/8 <span class="contacts__description-span">Санкт-<br class="contacts__br-form">Петербург</span>
+              ул. Большая Конюшенная, д. <br class="contacts__br-form" />19/8
+              <span class="contacts__description-span"
+                >Санкт-<br class="contacts__br-form" />Петербург</span
+              >
             </p>
           </div>
         </div>

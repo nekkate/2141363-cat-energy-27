@@ -13,7 +13,7 @@
 
   @media (min-width: $vp-1024) {
     min-height: 400px;
-    padding: 95px 0 107px 0;
+    padding: 96px 0 102px 0;
   }
 }
 
@@ -28,18 +28,6 @@
     padding: 59px 40px 64px 40px;
   }
 
-  &--main {
-    @media (min-width: $vp-1024) {
-      top: 95px;
-      left: 70px;
-
-      width: 565px;
-      padding: 56px 80px 65px 80px;
-
-      background-color: $color-white;
-    }
-  }
-
   @media (min-width: $vp-1024) {
     top: 95px;
     left: 70px;
@@ -48,6 +36,18 @@
     padding: 59px 80px 43px 80px;
 
     background-color: $color-white;
+  }
+
+  &--main {
+    @media (min-width: $vp-1024) {
+      top: 95px;
+      left: 70px;
+
+      width: 565px;
+      padding: 59px 80px 58px 80px;
+
+      background-color: $color-white;
+    }
   }
 }
 

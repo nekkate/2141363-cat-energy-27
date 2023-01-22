@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.min.css" />
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous" />
+    <link
+      rel="preload"
+      href="fonts/oswaldregular.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicon/apple.png" />
     <link rel="manifest" href="manifest.webmanifest" />
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous" />
+    <link
+      rel="preload"
+      href="fonts/oswaldregular.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <title>Интернет-магазин функционального питания для котиков.</title>
   </head>
 
   <body>
     <header class="main-header no-js">
-      <a class="main-header__logo" href="#">
+      <!--Добавьте класс is-open, чтобы открыть меню по умолчанию.-->
+      <a class="main-header__logo" href="index.html">
         <picture>
-          <source media="(min-width: 1024px)" srcset="./img/icons/logo-desktop.svg" />
-          <source media="(min-width: 768px)" srcset="./img/icons/logo-tablet.svg" />
-          <img class="main-header__logo-img" src="./img/icons/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт Энерджи." />
+          <source
+            media="(min-width: 1024px)"
+            srcset="./img/icons/logo-desktop.svg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./img/icons/logo-tablet.svg"
+          />
+          <img
+            class="main-header__logo-img"
+            src="./img/icons/logo-mobile.svg"
+            width="191"
+            height="38"
+            alt="Логотип Кэт Энерджи."
+          />
         </picture>
       </a>
       <nav class="main-nav">
@@ -47,27 +69,41 @@
           <h1 class="catalog__title">Каталог продукции</h1>
           <div class="catalog__products">
             <div class="catalog__product">
-              <div class="catalog__product__wrapper">
-                <picture>
-                  <source media="(min-width: 1024px)" srcset="
-                      ./img/content/catalog/energy-pro-500-chicken-desktop.png 1x,
-                      ./img/content/catalog/energy-pro-500-chicken-desktop@2x.png 2x
-                    " />
-                  <source media="(min-width: 768px)" srcset="
-                      ./img/content/catalog/energy-pro-500-chicken-tablet.png    1x,
-                      ./img/content/catalog/energy-pro-500-chicken-tablet@2x.png 2x
-                    " />
-                  <img class="catalog__img" width="68" height="86"
-                    src="./img/content/catalog/energy-pro-500-chicken-mobile.png" srcset="
-                      ./img/content/catalog/energy-pro-500-chicken-mobile@2x.png 2x
-                    " alt="Изображение банки Cat Energy
-                  PRO
-                  500 г" />
-                </picture>
+              <div class="catalog__product-wrapper">
+                <a class="catalog__product-img-link" href="#">
+                  <picture class="catalog__product-wrapper-pic">
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./img/content/catalog/energy-pro-500-chicken-desktop.png    1x,
+                        ./img/content/catalog/energy-pro-500-chicken-desktop@2x.png 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/content/catalog/energy-pro-500-chicken-tablet.png    1x,
+                        ./img/content/catalog/energy-pro-500-chicken-tablet@2x.png 2x
+                      "
+                    />
+                    <img
+                      class="catalog__img"
+                      width="68"
+                      height="86"
+                      src="./img/content/catalog/energy-pro-500-chicken-mobile.png"
+                      srcset="
+                        ./img/content/catalog/energy-pro-500-chicken-mobile@2x.png 2x
+                      "
+                      alt="Изображение банки Cat Energy
+                    PRO
+                    500 г"
+                    />
+                  </picture>
+                </a>
                 <div class="catalog__product-container">
-                  <h2 class="catalog__product-title">
-                    Cat Energy PRO 500 г</span>
-                  </h2>
+                  <a class="catalog__product-title-link" href="#">
+                    <h2 class="catalog__product-title">Cat Energy PRO 500 г</h2>
+                  </a>
                   <dl class="catalog__product-description">
                     <div class="catalog__description-item">
                       <dt class="catalog__description-term">Масса</dt>
@@ -84,30 +120,48 @@
                   </dl>
                 </div>
               </div>
-              <a class="button button--green catalog__product-link" href="#">Заказать</a>
+              <a class="button button--green catalog__product-link" href="#"
+                >Заказать</a
+              >
             </div>
             <div class="catalog__product">
-              <div class="catalog__product__wrapper">
-                <picture>
-                  <source media="(min-width: 1024px)" srcset="
-                      ./img/content/catalog/energy-pro-1000-chicken-desktop.png    1x,
-                      ./img/content/catalog/energy-pro-1000-chicken-desktop@2x.png 2x
-                    " />
-                  <source media="(min-width: 768px)" srcset="
-                      ./img/content/catalog/energy-pro-1000-chicken-tablet.png    1x,
-                      ./img/content/catalog/energy-pro-1000-chicken-tablet@2x.png 2x
-                    " />
-                  <img class="catalog__img catalog__img--big-card" width="84" height="100"
-                    src="./img/content/catalog/energy-pro-1000-chicken-mobile.png" srcset="
-                      ./img/content/catalog/energy-pro-1000-chicken-mobile@2x.png
-                    " alt="Изображение банки Cat Energy
-                  PRO
-                  1000 г" />
-                </picture>
+              <div class="catalog__product-wrapper">
+                <a class="catalog__product-img-link" href="#">
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./img/content/catalog/energy-pro-1000-chicken-desktop.png    1x,
+                        ./img/content/catalog/energy-pro-1000-chicken-desktop@2x.png 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/content/catalog/energy-pro-1000-chicken-tablet.png    1x,
+                        ./img/content/catalog/energy-pro-1000-chicken-tablet@2x.png 2x
+                      "
+                    />
+                    <img
+                      class="catalog__img catalog__img--big-card"
+                      width="84"
+                      height="100"
+                      src="./img/content/catalog/energy-pro-1000-chicken-mobile.png"
+                      srcset="
+                        ./img/content/catalog/energy-pro-1000-chicken-mobile@2x.png
+                      "
+                      alt="Изображение банки Cat Energy
+                    PRO
+                    1000 г"
+                    />
+                  </picture>
+                </a>
                 <div class="catalog__product-container">
-                  <h2 class="catalog__product-title">
-                    Cat Energy PRO 1000 г
-                  </h2>
+                  <a class="catalog__product-title-link" href="#">
+                    <h2 class="catalog__product-title">
+                      Cat Energy PRO 1000 г
+                    </h2>
+                  </a>
                   <dl class="catalog__product-description">
                     <div class="catalog__description-item">
                       <dt class="catalog__description-term">Масса</dt>
@@ -124,30 +178,46 @@
                   </dl>
                 </div>
               </div>
-              <a class="button button--green catalog__product-link" href="#">Заказать</a>
+              <a class="button button--green catalog__product-link" href="#"
+                >Заказать</a
+              >
             </div>
             <div class="catalog__product">
-              <div class="catalog__product__wrapper">
-                <picture>
-                  <source media="(min-width: 1024px)" srcset="
-                      ./img/content/catalog/energy-pro-500-fish-desktop.png    1x,
-                      ./img/content/catalog/energy-pro-500-fish-desktop@2x.png 2x
-                    " />
-                  <source media="(min-width: 768px)" srcset="
-                      ./img/content/catalog/energy-pro-500-fish-tablet.png    1x,
-                      ./img/content/catalog/energy-pro-500-fish-tablet@2x.png 2x
-                    " />
-                  <img class="catalog__img" width="68" height="86"
-                    src="./img/content/catalog/energy-pro-500-fish-mobile.png" srcset="
-                      ./img/content/catalog/energy-pro-500-fish-mobile@2x.png
-                    " alt="Изображение банки Cat Energy
-                PRO
-                500 г" />
-                </picture>
+              <div class="catalog__product-wrapper">
+                <a class="catalog__product-img-link" href="#">
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./img/content/catalog/energy-pro-500-fish-desktop.png    1x,
+                        ./img/content/catalog/energy-pro-500-fish-desktop@2x.png 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/content/catalog/energy-pro-500-fish-tablet.png    1x,
+                        ./img/content/catalog/energy-pro-500-fish-tablet@2x.png 2x
+                      "
+                    />
+                    <img
+                      class="catalog__img"
+                      width="68"
+                      height="86"
+                      src="./img/content/catalog/energy-pro-500-fish-mobile.png"
+                      srcset="
+                        ./img/content/catalog/energy-pro-500-fish-mobile@2x.png
+                      "
+                      alt="Изображение банки Cat Energy
+                  PRO
+                  500 г"
+                    />
+                  </picture>
+                </a>
                 <div class="catalog__product-container">
-                  <h2 class="catalog__product-title">
-                    Cat Energy PRO 500 г
-                  </h2>
+                  <a class="catalog__product-title-link" href="#">
+                    <h2 class="catalog__product-title">Cat Energy PRO 500 г</h2>
+                  </a>
                   <dl class="catalog__product-description">
                     <div class="catalog__description-item">
                       <dt class="catalog__description-term">Масса</dt>
@@ -164,33 +234,48 @@
                   </dl>
                 </div>
               </div>
-              <a class="button button--green catalog__product-link" href="#">Заказать</a>
+              <a class="button button--green catalog__product-link" href="#"
+                >Заказать</a
+              >
             </div>
             <div class="catalog__product">
-              <div class="catalog__product__wrapper">
-                <div class="catalog__product-picture-wrapper">
+              <div class="catalog__product-wrapper">
+                <a class="catalog__product-img-link" href="#">
                   <picture>
-                    <source media="(min-width: 1024px)" srcset="
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="
                         ./img/content/catalog/energy-pro-1000-fish-desktop.png    1x,
                         ./img/content/catalog/energy-pro-1000-fish-desktop@2x.png 2x
-                      " />
-                    <source media="(min-width: 768px)" srcset="
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
                         ./img/content/catalog/energy-pro-1000-fish-tablet.png    1x,
                         ./img/content/catalog/energy-pro-1000-fish-tablet@2x.png 2x
-                      " />
-                    <img class="catalog__img catalog__img--big-card" width="84" height="100"
-                      src="./img/content/catalog/energy-pro-1000-fish-mobile.png" srcset="
+                      "
+                    />
+                    <img
+                      class="catalog__img catalog__img--big-card"
+                      width="84"
+                      height="100"
+                      src="./img/content/catalog/energy-pro-1000-fish-mobile.png"
+                      srcset="
                         ./img/content/catalog/energy-pro-1000-fish-mobile@2x.png
-                      " alt="Изображение банки Cat Energy
-                  PRO
-                  1000 г" />
+                      "
+                      alt="Изображение банки Cat Energy
+                    PRO
+                    1000 г"
+                    />
                   </picture>
-                </div>
-
+                </a>
                 <div class="catalog__product-container">
-                  <h2 class="catalog__product-title">
-                    Cat Energy PRO 1000 г
-                  </h2>
+                  <a class="catalog__product-title-link" href="#">
+                    <h2 class="catalog__product-title">
+                      Cat Energy PRO 1000 г
+                    </h2>
+                  </a>
                   <dl class="catalog__product-description">
                     <div class="catalog__description-item">
                       <dt class="catalog__description-term">Масса</dt>
@@ -207,30 +292,48 @@
                   </dl>
                 </div>
               </div>
-              <a class="button button--green catalog__product-link" href="#">Заказать</a>
+              <a class="button button--green catalog__product-link" href="#"
+                >Заказать</a
+              >
             </div>
             <div class="catalog__product">
-              <div class="catalog__product__wrapper">
-                <picture>
-                  <source media="(min-width: 1024px)" srcset="
-                      ./img/content/catalog/energy-slim-500-buckwheat-desktop.png    1x,
-                      ./img/content/catalog/energy-slim-500-buckwheat-desktop@2x.png 2x
-                    " />
-                  <source media="(min-width: 768px)" srcset="
-                      ./img/content/catalog/energy-slim-500-buckwheat-tablet.png    1x,
-                      ./img/content/catalog/energy-slim-500-buckwheat-tablet@2x.png 2x
-                    " />
-                  <img class="catalog__img" width="68" height="86"
-                    src="./img/content/catalog/energy-slim-500-buckwheat-mobile.png" srcset="
-                      ./img/content/catalog/energy-slim-500-buckwheat-mobile@2x.png
-                    " alt="Изображение банки Cat Energy
-                slim
-                500 г" />
-                </picture>
+              <div class="catalog__product-wrapper">
+                <a class="catalog__product-img-link" href="#">
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./img/content/catalog/energy-slim-500-buckwheat-desktop.png    1x,
+                        ./img/content/catalog/energy-slim-500-buckwheat-desktop@2x.png 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/content/catalog/energy-slim-500-buckwheat-tablet.png    1x,
+                        ./img/content/catalog/energy-slim-500-buckwheat-tablet@2x.png 2x
+                      "
+                    />
+                    <img
+                      class="catalog__img"
+                      width="68"
+                      height="86"
+                      src="./img/content/catalog/energy-slim-500-buckwheat-mobile.png"
+                      srcset="
+                        ./img/content/catalog/energy-slim-500-buckwheat-mobile@2x.png
+                      "
+                      alt="Изображение банки Cat Energy
+                  slim
+                  500 г"
+                    />
+                  </picture>
+                </a>
                 <div class="catalog__product-container">
-                  <h2 class="catalog__product-title">
-                    Cat Energy slim 500 г
-                  </h2>
+                  <a class="catalog__product-title-link" href="#">
+                    <h2 class="catalog__product-title">
+                      Cat Energy slim 500 г
+                    </h2>
+                  </a>
                   <dl class="catalog__product-description">
                     <div class="catalog__description-item">
                       <dt class="catalog__description-term">Масса</dt>
@@ -247,30 +350,48 @@
                   </dl>
                 </div>
               </div>
-              <a class="button button--green catalog__product-link" href="#">Заказать</a>
+              <a class="button button--green catalog__product-link" href="#"
+                >Заказать</a
+              >
             </div>
             <div class="catalog__product">
-              <div class="catalog__product__wrapper">
-                <picture>
-                  <source media="(min-width: 1024px)" srcset="
-                      ./img/content/catalog/energy-slim-1000-buckwheat-desktop.png    1x,
-                      ./img/content/catalog/energy-slim-1000-buckwheat-desktop@2x.png 2x
-                    " />
-                  <source media="(min-width: 768px)" srcset="
-                      ./img/content/catalog/energy-slim-1000-buckwheat-tablet.png    1x,
-                      ./img/content/catalog/energy-slim-1000-buckwheat-tablet@2x.png 2x
-                    " />
-                  <img class="catalog__img catalog__img--big-card" width="84" height="100"
-                    src="./img/content/catalog/energy-slim-1000-buckwheat-mobile.png" srcset="
-                      ./img/content/catalog/energy-slim-1000-buckwheat-mobile@2x.png
-                    " alt="Изображение банки Cat Energy
-                slim
-                1000 г" />
-                </picture>
+              <div class="catalog__product-wrapper">
+                <a class="catalog__product-img-link" href="#">
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./img/content/catalog/energy-slim-1000-buckwheat-desktop.png    1x,
+                        ./img/content/catalog/energy-slim-1000-buckwheat-desktop@2x.png 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/content/catalog/energy-slim-1000-buckwheat-tablet.png    1x,
+                        ./img/content/catalog/energy-slim-1000-buckwheat-tablet@2x.png 2x
+                      "
+                    />
+                    <img
+                      class="catalog__img catalog__img--big-card"
+                      width="84"
+                      height="100"
+                      src="./img/content/catalog/energy-slim-1000-buckwheat-mobile.png"
+                      srcset="
+                        ./img/content/catalog/energy-slim-1000-buckwheat-mobile@2x.png
+                      "
+                      alt="Изображение банки Cat Energy
+                  slim
+                  1000 г"
+                    />
+                  </picture>
+                </a>
                 <div class="catalog__product-container">
-                  <h2 class="catalog__product-title">
-                    Cat Energy slim 1000 г
-                  </h2>
+                  <a class="catalog__product-title-link" href="#">
+                    <h2 class="catalog__product-title">
+                      Cat Energy slim 1000 г
+                    </h2>
+                  </a>
                   <dl class="catalog__product-description">
                     <div class="catalog__description-item">
                       <dt class="catalog__description-term">Масса</dt>
@@ -287,30 +408,48 @@
                   </dl>
                 </div>
               </div>
-              <a class="button button--green catalog__product-link" href="#">Заказать</a>
+              <a class="button button--green catalog__product-link" href="#"
+                >Заказать</a
+              >
             </div>
             <div class="catalog__product catalog__product--last">
-              <div class="catalog__product__wrapper ">
-                <picture>
-                  <source media="(min-width: 1024px)" srcset="
-                      ./img/content/catalog/energy-slim-500-rise-desktop.png    1x,
-                      ./img/content/catalog/energy-slim-500-rise-desktop@2x.png 2x
-                    " />
-                  <source media="(min-width: 768px)" srcset="
-                      ./img/content/catalog/energy-slim-500-rise-tablet.png    1x,
-                      ./img/content/catalog/energy-slim-500-rise-tablet@2x.png 2x
-                    " />
-                  <img class="catalog__img" width="68" height="86"
-                    src="./img/content/catalog/energy-slim-500-rise-mobile.png" srcset="
-                      ./img/content/catalog/energy-slim-500-rise-mobile@2x.png
-                    " alt="Изображение банки Cat Energy
-                slim
-                1000 г" />
-                </picture>
+              <div class="catalog__product-wrapper">
+                <a class="catalog__product-img-link" href="#">
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./img/content/catalog/energy-slim-500-rise-desktop.png    1x,
+                        ./img/content/catalog/energy-slim-500-rise-desktop@2x.png 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/content/catalog/energy-slim-500-rise-tablet.png    1x,
+                        ./img/content/catalog/energy-slim-500-rise-tablet@2x.png 2x
+                      "
+                    />
+                    <img
+                      class="catalog__img"
+                      width="68"
+                      height="86"
+                      src="./img/content/catalog/energy-slim-500-rise-mobile.png"
+                      srcset="
+                        ./img/content/catalog/energy-slim-500-rise-mobile@2x.png
+                      "
+                      alt="Изображение банки Cat Energy
+                  slim
+                  1000 г"
+                    />
+                  </picture>
+                </a>
                 <div class="catalog__product-container">
-                  <h2 class="catalog__product-title">
-                    Cat Energy slim 500 г
-                  </h2>
+                  <a class="catalog__product-title-link" href="#">
+                    <h2 class="catalog__product-title">
+                      Cat Energy slim 500 г
+                    </h2>
+                  </a>
                   <dl class="catalog__product-description">
                     <div class="catalog__description-item">
                       <dt class="catalog__description-term">Масса</dt>
@@ -327,17 +466,23 @@
                   </dl>
                 </div>
               </div>
-
-              <a class="button button--green catalog__product-link" href="#">Заказать</a>
+              <a class="button button--green catalog__product-link" href="#"
+                >Заказать</a
+              >
             </div>
             <div class="catalog__product catalog__product--all">
               <div class="catalog__product-card-all">
                 <h2 class="catalog__product-all-title">
                   Показать еще 100500&nbsp;товаров
                 </h2>
-                <span class="catalog__product-all-text">На самом деле вкусов гораздо&nbsp;больше!</span>
+                <span class="catalog__product-all-text"
+                  >На самом деле вкусов гораздо&nbsp;больше!</span
+                >
               </div>
-              <a class="catalog__product-link catalog__product-link--all button button--grey" href="#">
+              <a
+                class="catalog__product-link catalog__product-link--all button button--grey"
+                href="#"
+              >
                 показать все
               </a>
             </div>
@@ -360,7 +505,9 @@
                       <dd class="additionally__item-definition">200 ₽</dd>
                     </div>
                   </dl>
-                  <a class="additionally__button button button--green">заказать</a>
+                  <a class="additionally__button button button--green" href="#"
+                    >заказать</a
+                  >
                 </li>
                 <li class="additionally__list-item">
                   <h3 class="additionally__title">питьевая вода</h3>
@@ -370,7 +517,9 @@
                       <dd class="additionally__item-definition">50 ₽</dd>
                     </div>
                   </dl>
-                  <a class="additionally__button button button--green">заказать</a>
+                  <a class="additionally__button button button--green" href="#"
+                    >заказать</a
+                  >
                 </li>
                 <li class="additionally__list-item">
                   <h3 class="additionally__title">молоко</h3>
@@ -380,7 +529,9 @@
                       <dd class="additionally__item-definition">100 ₽</dd>
                     </div>
                   </dl>
-                  <a class="additionally__button button button--green">заказать</a>
+                  <a class="additionally__button button button--green" href="#"
+                    >заказать</a
+                  >
                 </li>
                 <li class="additionally__list-item">
                   <h3 class="additionally__title">витамины</h3>
@@ -390,7 +541,9 @@
                       <dd class="additionally__item-definition">300 ₽</dd>
                     </div>
                   </dl>
-                  <a class="additionally__button button button--green">заказать</a>
+                  <a class="additionally__button button button--green" href="#"
+                    >заказать</a
+                  >
                 </li>
               </ul>
             </section>
@@ -409,16 +562,24 @@
               к сотрудничеству дилеров!
             </h2>
             <p class="contacts__description">
-              ул. Большая Конюшенная, д. <br class="contacts__br-form">19/8 <span class="contacts__description-span">Санкт-<br class="contacts__br-form">Петербург</span>
+              ул. Большая Конюшенная, д. <br class="contacts__br-form" />19/8
+              <span class="contacts__description-span"
+                >Санкт-<br class="contacts__br-form" />Петербург</span
+              >
             </p>
           </div>
         </div>
         <div class="contacts__map">
           <h2 class="visually-hidden">Как до нас добраться.</h2>
-          <iframe class="contacts__img"
+          <iframe
+            class="contacts__img"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-            width="320" height="362" allowfullscreen title="Карта расположения магазина Cat
-        Energy."></iframe>
+            width="320"
+            height="362"
+            allowfullscreen
+            title="Карта расположения магазина Cat
+        Energy."
+          ></iframe>
         </div>
       </section>
     </main>
@@ -427,16 +588,26 @@
         <div class="main-footer__wrapper">
           <a class="main-footer__logo" href="#">
             <picture>
-              <source media="(min-width: 768px)" srcset="./img/icons/logo-cat-footer-tablet.svg" />
-              <img class="main-footer__logo-img" src="./img/icons/logo-cat-footer.svg" width="128" height="24"
-                alt="Логотип Кэт Энерджи." />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/icons/logo-cat-footer-tablet.svg"
+              />
+              <img
+                class="main-footer__logo-img"
+                src="./img/icons/logo-cat-footer.svg"
+                width="128"
+                height="24"
+                alt="Логотип Кэт Энерджи."
+              />
             </picture>
           </a>
           <ul class="main-footer__list">
             <li class="main-footer__item main-footer__item--vk">
               <a class="main-footer__link" href="#">
                 <svg width="28" height="22" fill="none">
-                  <use xlink:href="./img/sprite/sprite.svg#vkontakte-footer"></use>
+                  <use
+                    xlink:href="./img/sprite/sprite.svg#vkontakte-footer"
+                  ></use>
                 </svg>
                 <span class="visually-hidden">Мы в ВКонтакте.</span>
               </a>
@@ -444,7 +615,9 @@
             <li class="main-footer__item main-footer__item--yt">
               <a class="main-footer__link" href="#">
                 <svg width="28" height="22" fill="none">
-                  <use xlink:href="./img/sprite/sprite.svg#youtube-footer"></use>
+                  <use
+                    xlink:href="./img/sprite/sprite.svg#youtube-footer"
+                  ></use>
                 </svg>
                 <span class="visually-hidden">Мы в Ютубе.</span>
               </a>
@@ -452,7 +625,9 @@
             <li class="main-footer__item main-footer__item--tg">
               <a class="main-footer__link" href="#">
                 <svg width="28" height="22">
-                  <use xlink:href="./img/sprite/sprite.svg#telegram-footer"></use>
+                  <use
+                    xlink:href="./img/sprite/sprite.svg#telegram-footer"
+                  ></use>
                 </svg>
                 <span class="visually-hidden">Мы в Телеграмме.</span>
               </a>
@@ -462,7 +637,9 @@
             <span class="main-footer__logo-html-link">HTML Academy</span>
             <div class="main-footer__logo-img-html-link">
               <svg width="27" height="34" fill="none">
-                <use xlink:href="./img/sprite/sprite.svg#logo-html-academy"></use>
+                <use
+                  xlink:href="./img/sprite/sprite.svg#logo-html-academy"
+                ></use>
               </svg>
             </div>
           </a>
@@ -471,5 +648,4 @@
     </footer>
     <script src="/js/script.min.js"></script>
   </body>
-
 </html>
