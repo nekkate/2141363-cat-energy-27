@@ -25,8 +25,8 @@
   </head>
 
   <body>
-    <header class="main-header no-js">
-      <a class="main-header__logo" href="#">
+    <header class="main-header no-js"> <!--Добавьте класс is-open, чтобы открыть меню по умолчанию.-->
+      <a class="main-header__logo" href="index.html">
         <picture>
           <source
             media="(min-width: 1024px)"
@@ -78,9 +78,9 @@
             <div class="form__info">
               <div class="form__input-list">
                 <label class="form__input-list-item">
-                  <p class="form__input-list-text form__input-list-text--name">
+                  <span class="form__input-list-text form__input-list-text--name">
                     Имя:*
-                  </p>
+                  </span>
                   <input
                     class="form__input-list-input"
                     type="text"
@@ -90,11 +90,11 @@
                   />  <!--Добавьте модификатор form__input-list-input--error, чтобы показать ошибку при вводе -->
                 </label>
                 <label class="form__input-list-item">
-                  <p
+                  <span
                     class="form__input-list-text form__input-list-text--weight"
                   >
                     Вес (кг):*
-                  </p>
+                  </span>
                   <input
                     class="form__input-list-input"
                     type="number"
@@ -104,9 +104,9 @@
                   />
                 </label>
                 <label class="form__input-list-item">
-                  <p class="form__input-list-text form__input-list-text--year">
+                  <span class="form__input-list-text form__input-list-text--year">
                     Возраст (лет):*
-                  </p>
+                  </span>
                   <input
                     class="form__input-list-input form__input-list-input--year"
                     type="number"
@@ -186,9 +186,9 @@
                   </svg>
                 </label>
                 <label class="form__input-list-item">
-                  <p class="form__input-list-text form__input-list-text--phone">
+                  <span class="form__input-list-text form__input-list-text--phone">
                     Телефон:*
-                  </p>
+                  </span>
                   <input
                     class="form__input-list-input form__input-list-input--contacts"
                     type="text"

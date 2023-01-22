@@ -183,7 +183,7 @@
 
   @media (min-width: $vp-1024) {
     justify-content: end;
-    margin: 73px 0 0;
+    margin: 82px 0 0 0;
     padding: 37px 37px 30px 37px;
 
     &::before {
@@ -431,5 +431,15 @@
   @media (min-width: $vp-768) {
     font-size: 16px;
     line-height: 18px;
+  }
+}
+
+.catalog__product-img-link,
+.catalog__product-title-link {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
   }
 }
