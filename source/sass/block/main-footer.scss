@@ -20,7 +20,14 @@
   }
 
   @media (min-width: $vp-1024) {
-    padding: 64px 0 75px 0;
+    padding: 68px 0 75px 0;
+  }
+}
+
+.main-footer__wrapper--catalog {
+
+  @media (min-width: $vp-1024) {
+    padding: 55px 0 75px;
   }
 }
 
