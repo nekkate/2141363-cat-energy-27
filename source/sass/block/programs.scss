@@ -72,7 +72,7 @@
   }
 
   &--weightloss::before {
-    content: url("/img/icons/weightloss-icon-mobile.svg");
+    content: url("../img/icons/weightloss-icon-mobile.svg");
     position: absolute;
     top: 24px;
     left: 24px;
@@ -81,7 +81,7 @@
     height: 50px;
 
     @media (min-width: $vp-768) {
-      content: url("/img/icons/weightloss-icon-tablet.svg");
+      content: url("../img/icons/weightloss-icon-tablet.svg");
       position: relative;
       top: 10px;
       left: 0;
@@ -94,7 +94,7 @@
     }
 
     @media (min-width: $vp-1024) {
-      content: url("/img/icons/weightloss-icon-desktop.svg");
+      content: url("../img/icons/weightloss-icon-desktop.svg");
       position: absolute;
       top: 47px;
       left: 52px;
@@ -105,7 +105,7 @@
   }
 
   &--weightgain::before {
-    content: url("/img/icons/weightgain-icon-mobile.svg");
+    content: url("../img/icons/weightgain-icon-mobile.svg");
     position: absolute;
     top: 24px;
     left: 24px;
@@ -114,7 +114,7 @@
     height: 50px;
 
     @media (min-width: $vp-768) {
-      content: url("/img/icons/weightgain-icon-tablet.svg");
+      content: url("../img/icons/weightgain-icon-tablet.svg");
       position: relative;
       top: 10px;
       left: 0;
@@ -127,7 +127,7 @@
     }
 
     @media (min-width: $vp-1024) {
-      content: url("/img/icons/weightgain-icon-desktop.svg");
+      content: url("../img/icons/weightgain-icon-desktop.svg");
       position: absolute;
       top: 47px;
       left: 52px;
@@ -227,7 +227,7 @@
     height: 24px;
     overflow: hidden;
 
-    background-image: url("/img/icons/program-arrow-hover-and-active.svg");
+    background-image: url("../img/icons/program-arrow-hover-and-active.svg");
     background-repeat: no-repeat;
     background-position: right;
     transform-origin: left;
